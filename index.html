@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L5P</title>
+    <link rel="stylesheet" href="style.css">
+<!-- ➤ Chèn vào phần <head> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <!-- Nếu có file manifest thì thêm -->
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="custom-title">
+            <div class="main-title">Giáo án rèn nhân cách - Lớp ngũ giới</div>
+            <div class="sub-title">Đức Hiếu Sinh - Tập I</div>
+            <div class="author-title"><strong>TL THÍCH THÔNG LẠC</strong></div>
+        </div>
+    </p>
+    <label for="quiz-select">Chọn bộ câu hỏi:</label>
+    <select id="quiz-select">
+        <option value="output_quiz_data.json" data-title="Lời Nói Đầu">Lời nói đầu</option>
+        <option value="output_quiz_data_2.json" data-title="Lòng Yêu Thương Của Phật Giáo">Lòng yêu thương của Phật giáo</option>
+        <option value="output_quiz_data_3.json" data-title="Quán Thân Vô Thường">Quán Thân Vô Thường</option>
+        <!-- Thêm các bộ khác nếu có -->
+    </select>
+    
+        <h1 id="main-title">Lời Nói Đầu</h1>
+        <div id="timeline" class="timeline"></div>
+    <!-- ➤ Thêm nút toàn màn hình sau tiêu đề -->
+        <div class="toolbar-container">
+    <button id="toolbar-toggle" class="toolbar-toggle" title="Tùy chọn"><span>⚙</span></button>
+    <div id="toolbar-panel" class="toolbar-panel">
+        <button id="fullscreen-button" class="toolbar-btn" title="Toàn màn hình">⛶</button>
+        <button id="bgm-toggle" class="toolbar-btn" title="Bật/Tắt nhạc nền">🎵</button>
+    </div>
+</div>
+
+        <div class="progress-container">
+            <div class="progress-bar" id="progressBar"></div>
+            <span class="progress-text" id="progressText">0/0</span>
+        </div>
+
+        <div class="timer-controls-container">
+            <div id="timerDisplay" class="timer-display">00:00</div>
+            <div class="toggle-switch">
+                <input type="checkbox" id="timerToggle" checked>
+                <label for="timerToggle" class="slider"></label>
+                <span class="toggle-text">Hẹn giờ</span>
+            </div>
+        </div>
+
+        <div id="question-area" class="question-area">
+            <p id="question-text" class="question-text">Câu hỏi sẽ hiển thị ở đây.</p>
+            <div id="choices-container" class="choices-container">
+                </div>
+            <button id="submit-button" class="submit-button">Kiểm Tra</button>
+            <button id="next-button" class="next-button hidden">Câu Kế Tiếp</button>
+        </div>
+
+        <div id="explanation-area" class="explanation-area hidden">
+            <p id="explanation-text" class="explanation-text"></p>
+            <button id="continue-button" class="continue-button hidden">Tiếp Tục</button>
+        </div>
+
+        <div id="result-area" class="result-area hidden">
+            <h2 id="result-title"></h2>
+            <p id="score-text" class="score-text"></p>
+            <p id="feedback-text" class="feedback-text"></p>
+            <button id="restart-button" class="restart-button">Chơi Lại</button>
+            <button id="review-button" class="review-button hidden">Xem Lại Câu Sai</button>
+        </div>
+        <footer class="custom-footer">
+            <p><strong>Thầy Thích Thiện Tâm</strong> – Phiên bản TN.01</p>
+        </footer>
+    </div>
+
+    <!-- ➤ Thêm Howler.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+    <script src="script.js"></script>
+	    
+</body>
+</html>

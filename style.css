@@ -1,0 +1,550 @@
+/* style.css */
+
+/* Định dạng chung cho toàn bộ trang */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Font hiện đại, dễ đọc */
+    background-color: #eef2f7; /* Màu nền nhẹ nhàng, hiện đại, sáng hơn một chút */
+    display: flex;
+    justify-content: center; /* Căn giữa nội dung theo chiều ngang */
+    align-items: center; /* Căn giữa nội dung theo chiều dọc */
+    min-height: 100vh; /* Đảm bảo chiều cao tối thiểu bằng chiều cao viewport */
+    margin: 0;
+    padding: 20px; /* Thêm padding để nội dung không chạm mép màn hình nhỏ */
+    box-sizing: border-box; /* Bao gồm padding và border trong tổng kích thước */
+}
+
+/* Container chính của trò chơi */
+.quiz-container {
+    background-color: #ffffff; /* Nền trắng sạch sẽ */
+    border-radius: 15px; /* Bo góc mềm mại */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); /* Hiệu ứng đổ bóng tinh tế */
+    padding: 30px;
+    width: 100%;
+    max-width: 600px; /* Giới hạn chiều rộng tối đa cho màn hình lớn */
+    text-align: center;
+    overflow: hidden; /* Đảm bảo không có nội dung tràn ra ngoài */
+    transition: all 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+}
+
+/* Tiêu đề trò chơi */
+h1 {
+    color: #2c3e50; /* Màu chữ đậm, rõ ràng hơn */
+    margin-bottom: 30px;
+    font-size: 2em; /* Chữ to, dễ đọc */
+}
+
+/* Khu vực câu hỏi */
+.question-area, .explanation-area, .result-area {
+    margin-bottom: 20px;
+}
+
+/* Văn bản câu hỏi (Nổi bật hơn) */
+.question-text {
+    font-size: 1.5em; /* Chữ to, rõ ràng */
+    color: #2c3e50; /* Màu chữ đậm, rõ ràng hơn trên nền xanh */
+    font-weight: bold; /* Chữ đậm */
+    background-color: #e1f5fe; /* Nền xanh nhạt, tương phản tốt */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08); /* Đổ bóng nhẹ */
+    margin-bottom: 25px;
+    line-height: 1.5; /* Khoảng cách dòng giúp dễ đọc */
+    border: 1px solid #b3e5fc; /* Viền nhẹ, tương đồng với nền */
+}
+
+/* Văn bản giải thích */
+.explanation-text {
+    font-size: 1.4em; /* Chữ to, rõ ràng */
+    color: #34495e; /* Màu chữ đậm hơn một chút */
+    margin-bottom: 25px;
+    line-height: 1.5; /* Khoảng cách dòng giúp dễ đọc */
+    background-color: #fcfcfc; /* Nền sáng hơn cho giải thích */
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+/* Container chứa các lựa chọn */
+.choices-container {
+    display: flex;
+    flex-direction: column; /* Sắp xếp các lựa chọn theo cột */
+    gap: 15px; /* Khoảng cách giữa các lựa chọn */
+    margin-bottom: 30px;
+}
+
+/* Định dạng cho mỗi nút lựa chọn */
+.choice-button {
+    color: #34495e; /* Màu chữ đậm hơn trên các nền nhạt */
+    border: none;
+    border-radius: 10px; /* Bo góc nút */
+    padding: 18px 25px; /* Kích thước nút lớn, dễ bấm bằng ngón tay */
+    font-size: 1.3em; /* Chữ to trong nút */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease; /* Hiệu ứng di chuột và bấm */
+    text-align: left; /* Căn trái văn bản trong nút */
+    width: 100%; /* Chiếm toàn bộ chiều rộng có sẵn */
+    box-sizing: border-box; /* Đảm bảo padding không làm tràn nút */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05); /* Bóng nhẹ cho item */
+}
+
+/* Các màu nền khác nhau cho các lựa chọn (Đã điều chỉnh để tăng tương phản với chữ) */
+.choice-button:nth-child(1) { background-color: #ffdcb5; /* Cam đào nhạt */ }
+.choice-button:nth-child(2) { background-color: #d1eccd; /* Xanh mint nhạt */ }
+.choice-button:nth-child(3) { background-color: #c0e0ff; /* Xanh da trời nhạt */ }
+.choice-button:nth-child(4) { background-color: #ffc4b2; /* Đỏ cam nhạt */ }
+/* Thêm các màu khác nếu có nhiều hơn 4 lựa chọn */
+
+.choice-button:hover:not(.selected):not(.correct):not(.wrong) {
+    background-color: #e0e0e0; /* Hiệu ứng hover nhẹ hơn */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* Bóng đậm hơn khi hover */
+}
+
+.choice-button:active {
+    transform: translateY(2px); /* Hiệu ứng bấm nút */
+}
+
+/* Trạng thái nút lựa chọn khi ĐƯỢC CHỌN (màu cam - đã tăng cường tương phản) */
+.choice-button.selected {
+    background-color: #e67e22; /* Màu cam đậm hơn */
+    color: white; /* Giữ màu chữ trắng để tương phản tốt với nền cam đậm */
+    box-shadow: 0 4px 10px rgba(230, 126, 34, 0.4);
+}
+
+/* Trạng thái nút lựa chọn khi chọn đúng hoặc sai (đã tăng cường tương phản) */
+.choice-button.correct {
+    background-color: #27ae60; /* Màu xanh lá cây đậm hơn */
+    color: white;
+    box-shadow: 0 4px 10px rgba(39, 174, 96, 0.4);
+}
+
+.choice-button.wrong {
+    background-color: #c0392b; /* Màu đỏ đậm hơn */
+    color: white;
+    box-shadow: 0 4px 10px rgba(192, 57, 43, 0.4);
+}
+
+/* Nút chính (Kiểm Tra, Câu Kế Tiếp, Chơi Lại, Tiếp Tục) */
+.submit-button, .next-button, .continue-button, .restart-button {
+    background-color: #3498db; /* Màu xanh dương hiện đại và đậm hơn */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 15px 30px; /* Kích thước nút lớn */
+    font-size: 1.4em; /* Chữ to */
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 20px; /* Khoảng cách với các thành phần trên */
+    width: 100%; /* Chiếm toàn bộ chiều rộng có sẵn */
+    max-width: 300px; /* Giới hạn chiều rộng cho nút trên màn hình lớn */
+    display: block; /* Đảm bảo nút chiếm một dòng riêng */
+    margin-left: auto; /* Căn giữa nút */
+    margin-right: auto; /* Căn giữa nút */
+    box-shadow: 0 5px 15px rgba(52, 152, 219, 0.2); /* Đổ bóng cho nút */
+}
+
+.submit-button:hover, .next-button:hover, .continue-button:hover, .restart-button:hover {
+    background-color: #2980b9; /* Hiệu ứng hover đậm hơn */
+    box-shadow: 0 8px 20px rgba(52, 152, 219, 0.3);
+}
+
+.submit-button:active, .next-button:active, .continue-button:active, .restart-button:active {
+    transform: translateY(2px);
+}
+
+/* Lớp ẩn */
+.hidden {
+    display: none;
+}
+
+/* Văn bản điểm số */
+.score-text {
+    font-size: 1.8em; /* Chữ to cho điểm số */
+    color: #2c3e50; /* Màu chữ đậm, rõ ràng */
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Responsive design cho màn hình nhỏ hơn (ví dụ: điện thoại) */
+@media (max-width: 768px) {
+    .quiz-container {
+        margin: 10px; /* Giảm margin trên thiết bị nhỏ */
+        padding: 20px; /* Giảm padding */
+    }
+
+    h1 {
+        font-size: 1.8em; /* Giảm kích thước tiêu đề */
+    }
+
+    .question-text, .explanation-text {
+        font-size: 1.3em; /* Giảm kích thước chữ câu hỏi/giải thích */
+        padding: 15px;
+    }
+
+    .choice-button {
+        padding: 15px 20px; /* Giảm padding nút lựa chọn */
+        font-size: 1.2em; /* Giảm kích thước chữ trong nút */
+    }
+
+    .submit-button, .next-button, .continue-button, .restart-button {
+        padding: 12px 25px; /* Giảm padding nút hành động */
+        font-size: 1.2em; /* Giảm kích thước chữ trong nút hành động */
+        max-width: 100%; /* Cho phép nút chiếm toàn bộ chiều rộng */
+    }
+}
+/* style.css (Tiếp nối từ các thay đổi tương phản phía trên) */
+
+/* ... (Giữ nguyên toàn bộ CSS đã điều chỉnh ở Bước 1: Tương phản màu sắc) ... */
+
+/* Thêm định dạng cho thanh tiến độ */
+.progress-container {
+    width: 90%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 25px;
+    margin: 20px auto 30px auto; /* Căn giữa và tạo khoảng cách */
+    overflow: hidden;
+    position: relative; /* Quan trọng cho text */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); /* Hiệu ứng lõm */
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Ban đầu là 0% */
+    background-color: #2ecc71; /* Màu xanh lá cây cho thanh tiến độ */
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out; /* Hoạt ảnh khi thanh thay đổi */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 25px; /* Căn giữa theo chiều dọc */
+    color: #444; /* Màu chữ cho số câu hỏi */
+    font-weight: bold;
+    font-size: 0.9em;
+    z-index: 1; /* Đảm bảo chữ nằm trên thanh bar */
+}
+
+/* Cải thiện giao diện khu vực kết quả */
+.result-area {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    margin-top: 30px;
+}
+
+#result-title {
+    font-size: 2.2em;
+    color: #27ae60; /* Màu xanh lá cây cho tiêu đề thành công */
+    margin-bottom: 15px;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.score-text {
+    font-size: 2em; /* Kích thước to hơn cho điểm số */
+    color: #34495e;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.feedback-text {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+    line-height: 1.4;
+}
+
+.review-button { /* Định dạng nút xem lại câu sai */
+    background-color: #f39c12; /* Màu cam */
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 12px 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    margin-top: 10px; /* Khoảng cách với nút chơi lại */
+    width: 100%;
+    max-width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 5px 15px rgba(243, 156, 18, 0.2);
+}
+
+.review-button:hover {
+    background-color: #e67e22; /* Cam đậm hơn khi hover */
+    box-shadow: 0 8px 20px rgba(243, 156, 18, 0.3);
+}
+
+.review-button:active {
+    transform: translateY(2px);
+}
+
+
+/* Responsive design (cập nhật nếu cần) */
+@media (max-width: 768px) {
+    /* ... (Giữ nguyên phần responsive đã có) ... */
+    .progress-container {
+        width: 95%; /* Chiếm nhiều không gian hơn trên màn hình nhỏ */
+    }
+    #result-title {
+        font-size: 1.8em;
+    }
+    .score-text {
+        font-size: 1.6em;
+    }
+    .feedback-text {
+        font-size: 1.1em;
+    }
+    .review-button {
+        max-width: 100%;
+    }
+}
+/* style.css */
+
+/* ... (Giữ nguyên toàn bộ CSS đã điều chỉnh ở Bước 1: Tương phản màu sắc) ... */
+
+/* Thêm định dạng cho thanh tiến độ */
+.progress-container {
+    width: 90%;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    height: 25px;
+    margin: 20px auto 30px auto; /* Căn giữa và tạo khoảng cách */
+    overflow: hidden;
+    position: relative; /* Quan trọng cho text */
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.2); /* Hiệu ứng lõm */
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%; /* Ban đầu là 0% */
+    background-color: #2ecc71; /* Màu xanh lá cây cho thanh tiến độ */
+    border-radius: 10px;
+    transition: width 0.4s ease-in-out; /* Hoạt ảnh khi thanh thay đổi */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* ĐIỀU CHỈNH: Đặt chữ tiến độ vào giữa thanh */
+.progress-text {
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    line-height: 25px; /* Căn giữa theo chiều dọc */
+    color: #444; /* Màu chữ cho số câu hỏi */
+    font-weight: bold;
+    font-size: 0.9em;
+    z-index: 2; /* Đảm bảo chữ nằm trên thanh bar */
+    left: 50%; /* Dịch sang giữa */
+    transform: translateX(-50%); /* Dịch lại 50% chiều rộng của chính nó để căn giữa hoàn hảo */
+    white-space: nowrap; /* Ngăn chữ bị ngắt dòng */
+}
+
+
+/* Định dạng khu vực Timer và Toggle */
+.timer-controls-container {
+    display: flex;
+    justify-content: space-between; /* Đẩy timer và toggle ra hai bên */
+    align-items: center;
+    margin-bottom: 25px;
+    background-color: #f0f4f7; /* Nền nhẹ cho khu vực này */
+    padding: 15px 20px;
+    border-radius: 10px;
+    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.timer-display {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #34495e;
+    min-width: 90px; /* Đảm bảo đủ không gian cho thời gian */
+    text-align: left; /* Căn trái thời gian */
+}
+
+/* Hiệu ứng khi thời gian sắp hết */
+.timer-display.warning {
+    color: #e74c3c; /* Màu đỏ cảnh báo */
+    animation: pulse 1s infinite alternate; /* Hoạt ảnh nhấp nháy */
+}
+
+@keyframes pulse {
+    from { transform: scale(1); opacity: 1; }
+    to { transform: scale(1.05); opacity: 0.8; }
+}
+
+/* Định dạng Toggle Switch */
+.toggle-switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 20px; /* Khoảng cách với timer */
+}
+
+.toggle-switch .toggle-text {
+    font-size: 1em;
+    color: #555;
+    margin-right: 10px;
+}
+
+.toggle-switch input[type="checkbox"] {
+    display: none; /* Ẩn checkbox mặc định */
+}
+
+.toggle-switch .slider {
+    position: relative;
+    cursor: pointer;
+    background-color: #ccc;
+    transition: 0.4s;
+    width: 50px;
+    height: 26px;
+    border-radius: 26px; /* Hình bầu dục */
+}
+
+.toggle-switch .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%; /* Hình tròn */
+}
+
+input:checked + .slider {
+    background-color: #2ecc71; /* Màu xanh khi bật */
+}
+
+input:checked + .slider:before {
+    transform: translateX(24px); /* Dịch chuyển nút tròn khi bật */
+}
+
+/* ... (Giữ nguyên toàn bộ CSS của khu vực kết quả và responsive design) ... */
+/* ➤ Nút toàn màn hình */
+.fullscreen-button {
+    background-color: #8e44ad;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    margin-bottom: 20px;
+    box-shadow: 0 5px 10px rgba(142, 68, 173, 0.2);
+}
+
+.fullscreen-button:hover {
+    background-color: #732d91;
+}
+.bgm-toggle {
+    margin: 10px;
+    padding: 8px 16px;
+    font-size: 16px;
+}
+.explanation-area {
+    background: #fffbe6;
+    border: 2px solid #f1c40f;
+    border-radius: 10px;
+    padding: 18px 20px;
+    margin: 20px 0;
+    box-shadow: 0 4px 16px rgba(241, 196, 15, 0.15);
+    color: #b9770e;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: box-shadow 0.3s;
+}
+.custom-title {
+    text-align: center;
+    margin-bottom: 18px;
+}
+.custom-title .main-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2c3e50;
+}
+.custom-title .sub-title {
+    font-size: 1.05em;
+    color: #2980b9;
+    margin: 2px 0;
+}
+.custom-title .author-title {
+    font-size: 1.1em;
+    color: #c0392b;
+    font-weight: bold;
+    margin-top: 4px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 4px #f9e79f;
+    font-family: "Times New Roman", Times, Georgia, serif; /* Font có chân */
+}
+.timeline {
+    font-size: 1em;
+    color: #2980b9;
+    margin: 4px 0 10px 0;
+    text-align: right;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 1px;
+}
+.toolbar-container {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    z-index: 100;
+}
+.toolbar-toggle {
+    background: #fff;
+    border: 1.5px solid #bbb;
+    border-radius: 50%;
+    width: 38px;
+    height: 38px;
+    font-size: 1.3em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    transition: background 0.2s;
+}
+.toolbar-toggle:hover {
+    background: #f1c40f;
+    color: #fff;
+}
+.toolbar-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    background: #fffbe6;
+    border: 1.5px solid #f1c40f;
+    border-radius: 10px;
+    padding: 10px 8px;
+    margin-top: 8px;
+    box-shadow: 0 4px 16px rgba(241,196,15,0.12);
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: opacity 0.2s, transform 0.2s;
+}
+.toolbar-panel.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+.toolbar-btn {
+    background: none;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    padding: 6px 0;
+    color: #b9770e;
+    border-radius: 6px;
+    transition: background 0.2s;
+}
+.toolbar-btn:hover {
+    background: #f9e79f;
+}
