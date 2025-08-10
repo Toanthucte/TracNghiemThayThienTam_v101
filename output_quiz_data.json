@@ -33,7 +33,7 @@
       "Bị ức chế tâm khi tu thiền định"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Tài liệu nêu rõ rằng nếu chưa học các lớp căn bản mà tu học Bát Chánh Đạo thì sẽ bị mất căn bản, dẫn đến bị ức chế tâm trong thiền định."
+    "explanation": "Trưởng Lão nêu rõ rằng nếu chưa học các lớp căn bản mà tu học Bát Chánh Đạo thì sẽ bị mất căn bản, dẫn đến bị ức chế tâm trong thiền định."
   },
   {
     "id": "q_4",
@@ -122,7 +122,7 @@
   {
     "id": "q_11",
     "type": "multiple-choice",
-    "questionText": "Tài liệu khẳng định đạo đức nhân bản - nhân quả phù hợp với ai?",
+    "questionText": "Trưởng Lão khẳng định đạo đức nhân bản - nhân quả phù hợp với ai?",
     "options": [
       "Chỉ người theo Phật giáo",
       "Mọi người có tín ngưỡng",
@@ -142,5 +142,17 @@
     ],
     "correctAnswerIndex": 2,
     "explanation": "Giáo án nhằm giúp mọi người rèn luyện nhân cách, có tâm hồn cao thượng, sống bao dung, biết yêu thương và không gây khổ cho ai."
+  },
+  {
+    "id": "q_13",
+    "type": "multiple-choice",
+    "questionText": "Trong Ngũ Giới, đức minh mẫn thuộc về loại đạo đức nào?",
+    "options": [
+      "Đạo đức bản thân",
+      "Đạo đức xã hội",
+      "Đạo đức gia đình"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đức minh mẫn là tránh say sưa, nghiện ngập và các tệ nạn xã hội như rượu chè, cờ bạc, ma túy… Những hành vi này không chỉ gây hại cho bản thân mà còn ảnh hưởng tiêu cực đến gia đình, cộng đồng và trật tự xã hội, vì vậy đức minh mẫn thuộc về đạo đức xã hội."
   }
 ]
