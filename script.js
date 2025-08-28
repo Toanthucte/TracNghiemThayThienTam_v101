@@ -46,6 +46,7 @@ const audioWrong = new Audio('sounds/wrong.mp3');
 const audioClick = new Audio('sounds/click.mp3');
 const audioFinish = new Audio('sounds/finish.mp3');
 const audioStart = new Audio('sounds/start.mp3');
+audioStart.volume = 0.1;
 const audioRestart = new Audio('sounds/restart.mp3');
 const audioWarning = new Audio('sounds/warning.mp3'); // Âm thanh cảnh báo thời gian hết
 const audioTimeout = new Audio('sounds/timeout.mp3');
@@ -147,8 +148,10 @@ function displayQuestion() {
     updateProgressBar();
 
     const currentQuestion = data[currentQuestionIndex];
-    // ➤ Phát âm thanh đọc câu hỏi
-    speakText(currentQuestion.questionText, 'female');
+    // ➤ Phát âm thanh đọc câu hỏi sau 8 giây
+    setTimeout(function() {
+        speakText(currentQuestion.questionText, 'female');
+    }, 8000);
     questionText.textContent = currentQuestion.questionText; // SỬA: 'question' -> 'questionText'
 
     choicesContainer.innerHTML = ''; // Xóa các lựa chọn cũ

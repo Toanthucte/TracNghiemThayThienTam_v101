@@ -1,0 +1,98 @@
+[
+  {
+    "id": "q_1",
+    "type": "multiple-choice",
+    "questionText": "Muốn nuôi dưỡng lòng yêu thương chúng sinh, việc đầu tiên cần làm là gì?",
+    "options": [
+      "Đọc kinh cầu an",
+      "Ly dục, ly ác pháp, lìa tham – sân – si – mạn – nghi",
+      "Chỉ thương loài nhỏ"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Buông bỏ ngũ triền cái (tham, sân, si, mạn, nghi) thì tâm mới hiền hòa, có thể khởi lòng từ bi chân thật."
+  },
+  {
+    "id": "q_2",
+    "type": "multiple-choice",
+    "questionText": "Tri kiến nào giúp ta rèn nhân cách hiếu sinh?",
+    "options": [
+      "Tri kiến nhân quả: ngăn ác, diệt ác, sống thiện",
+      "Tri kiến làm giàu",
+      "Tri kiến khoa học"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Nhân quả dạy rằng gieo nhân nào gặt quả nấy. Hiểu luật nhân quả sẽ tránh sát sinh, sống thiện lành."
+  },
+  {
+    "id": "q_3",
+    "type": "multiple-choice",
+    "questionText": "Đạo đức cốt lõi khi thực hành “không giết hại” là gì?",
+    "options": [
+      "Hiếu thuận cha mẹ",
+      "Hiếu sinh – không làm khổ mình, khổ người, khổ chúng sinh",
+      "Trung thực lời nói"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đạo đức hiếu sinh là nền tảng, tôn trọng sự sống của muôn loài, không gây tổn hại."
+  },
+  {
+    "id": "q_4",
+    "type": "multiple-choice",
+    "questionText": "Tác ý nào thể hiện đúng tinh thần hiếu sinh?",
+    "options": [
+      "“Mọi loài đều sợ chết, hãy thương yêu như chính mình, như mẹ thương con.”",
+      "“Loài mạnh ăn loài yếu.”",
+      "“Ăn chay để có phước báu.”"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tác ý này khởi lòng thương rộng lớn, thấy sự sống của loài khác cũng quý như chính mình."
+  },
+  {
+    "id": "q_5",
+    "type": "multiple-choice",
+    "questionText": "Rèn nhân cách hiếu sinh qua thân – khẩu – ý tỉnh thức nghĩa là gì?",
+    "options": [
+      "Không giết hại, không xúi giục, không khởi tâm tham sát",
+      "Chỉ giữ thân, không cần giữ ý",
+      "Cầu nguyện thay thế"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Cả ba nghiệp đều tạo nhân quả. Tỉnh thức đủ cả thân – khẩu – ý mới thực sự ngăn ác, diệt ác."
+  },
+  {
+    "id": "q_6",
+    "type": "multiple-choice",
+    "questionText": "Tỉnh thức trong đi – đứng – nằm – ngồi, ăn uống, sinh hoạt hằng ngày giúp gì?",
+    "options": [
+      "Giúp khỏe mạnh",
+      "Không làm khổ mình, khổ người, khổ chúng sinh",
+      "Giữ trang nghiêm trước người khác"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chánh niệm trong sinh hoạt giúp ta tránh vô ý làm hại sinh mạng nhỏ bé và sống an lạc."
+  },
+  {
+    "id": "q_7",
+    "type": "multiple-choice",
+    "questionText": "Quán hơi thở ra vào đúng cách sẽ giúp gì?",
+    "options": [
+      "Tăng trí nhớ",
+      "Xả tâm ly tham – sân – si – mạn – nghi",
+      "Luyện sức khỏe"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Quán hơi thở với tác ý buông bỏ phiền não giúp tâm thanh tịnh, hiền hòa, không khởi ác ý."
+  },
+  {
+    "id": "q_8",
+    "type": "multiple-choice",
+    "questionText": "Triển khai Tứ Vô Lượng Tâm (Từ, Bi, Hỷ, Xả) đem lại lợi ích gì?",
+    "options": [
+      "Giúp tâm từ bi rộng lớn, không làm khổ ai",
+      "Giúp có nhiều phước báu để giàu sang",
+      "Giúp dễ được khen ngợi"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tứ Vô Lượng Tâm làm tâm thanh tịnh, tràn đầy tình thương, dẫn đến vô lậu giải thoát."
+  }
+]

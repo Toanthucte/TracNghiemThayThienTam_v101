@@ -1,0 +1,158 @@
+[
+  {
+    "id": "q_1",
+    "type": "multiple-choice",
+    "questionText": "Đức Phật khuyên chúng ta “không nên giết hại chúng sinh” vì lý do gì?",
+    "options": [
+      "Vì muốn con người có nhiều phước báu.",
+      "Vì hiểu rõ luật nhân quả, giết hại sẽ đem lại khổ đau.",
+      "Vì muốn con người sợ hãi mà không dám làm ác."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đức Phật biết rõ giết hại là ác nghiệp, sẽ chuốc lấy quả báo khổ đau. Ngài dạy điều này từ lòng từ bi chứ không phải để hù dọa."
+  },
+  {
+    "id": "q_2",
+    "type": "multiple-choice",
+    "questionText": "Hành động giết hại và ăn thịt chúng sinh gây ra hậu quả gì cho thế gian?",
+    "options": [
+      "Làm tăng trưởng lòng từ bi.",
+      "Khiến cuộc sống bất an, thiên tai và tai họa nhiều hơn.",
+      "Chỉ ảnh hưởng đến người trực tiếp giết hại."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Máu xương chúng sinh chồng chất khiến thế gian bất an, nhân quả ác hiện ra thành thiên tai, dịch bệnh, tai nạn."
+  },
+  {
+    "id": "q_3",
+    "type": "multiple-choice",
+    "questionText": "Nguyên nhân chính khiến con người chịu nhiều khổ đau là gì?",
+    "options": [
+      "Vì nghèo đói và bệnh tật.",
+      "Vì vô minh, không hiểu luật nhân quả.",
+      "Vì môi trường sống xấu."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Vô minh che lấp khiến con người tạo ác nghiệp, từ đó sinh ra khổ đau không dứt."
+  },
+  {
+    "id": "q_4",
+    "type": "multiple-choice",
+    "questionText": "Các pháp thường thay đổi là do đâu?",
+    "options": [
+      "Do ý muốn của Thượng Đế.",
+      "Do quy luật nhân quả, thành – trụ – hoại – diệt.",
+      "Do con người không biết giữ gìn."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mọi pháp đều vô thường, thay đổi theo nhân quả, không có gì đứng yên bất biến."
+  },
+  {
+    "id": "q_5",
+    "type": "multiple-choice",
+    "questionText": "“Không nên giết hại chúng sinh” thuộc về đạo đức nào?",
+    "options": [
+      "Đạo đức hiếu sinh.",
+      "Đạo đức gia đình.",
+      "Đạo đức minh mẫn."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Đây là đạo đức hiếu sinh – yêu thương, tôn trọng sự sống của muôn loài."
+  },
+  {
+    "id": "q_6",
+    "type": "multiple-choice",
+    "questionText": "Muốn rèn nhân cách “không giết hại chúng sinh”, việc nào là căn bản nhất?",
+    "options": [
+      "Ăn uống chay tịnh để giữ thân thanh tịnh.",
+      "Ly dục, ly ác pháp, diệt tham – sân – si.",
+      "Thường xuyên đọc kinh cầu nguyện."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Muốn thực hành hiếu sinh phải dẹp bỏ tham sân si, ngăn ác, sống trong thiện pháp."
+  },
+  {
+    "id": "q_7",
+    "type": "multiple-choice",
+    "questionText": "Vì sao nhiều người giết hại động vật mà không chút thương xót?",
+    "options": [
+      "Vì tư tưởng sai lầm “vật dưỡng nhân”.",
+      "Vì thiếu thức ăn chay.",
+      "Vì động vật sinh ra để bị giết."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Quan niệm sai lầm “vật dưỡng nhân” khiến người ta chấp ngã, coi thường sự sống loài vật."
+  },
+  {
+    "id": "q_8",
+    "type": "multiple-choice",
+    "questionText": "Khi giết hại chúng sinh, con người sẽ nhận lại quả báo gì?",
+    "options": [
+      "Được giàu sang.",
+      "Bệnh tật, tai nạn, hoặc bị giết lại.",
+      "Không có gì, vì đó là tự nhiên."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Luật nhân quả công bằng, gieo nghiệp sát sinh thì phải trả bằng khổ đau và mạng sống."
+  },
+  {
+    "id": "q_9",
+    "type": "multiple-choice",
+    "questionText": "Vì sao con người và loài vật cùng sống chung môi trường mà vẫn giết hại, ăn thịt nhau?",
+    "options": [
+      "Vì thiếu thức ăn.",
+      "Vì vô minh, không hiểu nhân quả.",
+      "Vì bản năng tự nhiên của loài người."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chính vô minh khiến con người tạo ác nghiệp, không thấy sự bình đẳng trong sự sống."
+  },
+  {
+    "id": "q_10",
+    "type": "multiple-choice",
+    "questionText": "Muốn chấm dứt vô minh và khổ đau, con đường nào là đúng đắn?",
+    "options": [
+      "Bát Chánh Đạo.",
+      "Tụng kinh cầu an.",
+      "Khổ hạnh ép xác."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Bát Chánh Đạo là con đường duy nhất để đoạn trừ vô minh, rèn nhân cách và chứng đạo."
+  },
+  {
+    "id": "q_11",
+    "type": "multiple-choice",
+    "questionText": "Trong môi trường sống, con người phải đối xử thế nào với muôn loài?",
+    "options": [
+      "Đối xử theo nguyên tắc mạnh được yếu thua.",
+      "Đối xử bằng đức hiếu sinh, thương yêu rộng lớn.",
+      "Đối xử có chọn lọc, chỉ thương người thân."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đức hiếu sinh là thương yêu vô điều kiện, như mẹ thương con, như biển rộng trời cao."
+  },
+  {
+    "id": "q_12",
+    "type": "multiple-choice",
+    "questionText": "Người sống trọn vẹn với lòng hiếu sinh sẽ đạt được lợi ích gì?",
+    "options": [
+      "Có nhiều của cải vật chất.",
+      "Thoát khổ, chứng quả A La Hán, sống an lạc.",
+      "Được mọi người kính trọng."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lòng hiếu sinh giúp diệt ác, tăng trưởng thiện, dẫn đến vô lậu giải thoát và Niết Bàn."
+  },
+  {
+    "id": "q_13",
+    "type": "multiple-choice",
+    "questionText": "Tại sao con người và loài vật sinh ra cùng sống trong một môi trường như nhau mà lại giết nhau và ăn thịt nhau?",
+    "options": [
+      "Vì nguồn thức ăn khan hiếm nên phải tranh giành.",
+      "Vì vô minh, không hiểu nhân quả nên sát hại lẫn nhau.",
+      "Vì “thiên nhiên sắp đặt” phân cấp mạnh – yếu nên là điều tự nhiên."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Theo bài học, gốc rễ là vô minh - không thấy luật nhân quả, nên khởi hành động ác (sát sinh). Tài liệu còn liên hệ đến mười hai nhân duyên, trong đó Vô minh đứng đầu, dẫn dắt chuỗi khổ đau sinh - già - bệnh - chết."
+  }
+]

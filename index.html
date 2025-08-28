@@ -31,6 +31,9 @@
 <link rel="image_src" href="https://toanthucte.github.io/TracNghiemThayThienTam_v101/thumbnail.png">
 </head>
 <body>
+    <div id="toast-new-content" style="display:none;position:fixed;top:32px;right:24px;z-index:9999;background:#fffbe6;border:2px solid #e67e22;padding:16px 26px;border-radius:12px;box-shadow:0 4px 18px rgba(0,0,0,0.14);color:#e67e22;font-weight:bold;cursor:pointer;opacity:0;transform:translateY(-30px);transition:opacity 0.5s, transform 0.5s;">
+        <span style="font-size:1.5em;vertical-align:middle;">🔔</span> <span style="margin-left:8px;">Có nội dung mới! Nhấn vào đây để xem.</span>
+    </div>
     <div class="quiz-container">
         <div class="custom-title">
             <div class="main-title">Giáo án rèn nhân cách - Lớp ngũ giới</div>
@@ -67,7 +70,10 @@
         <option value="output_quiz_data_1.json" data-title="Nghi lễ của Niệm Phật">Nghi lễ của Niệm Phật</option>
         <option value="output_quiz_data_2.json" data-title="Lòng Yêu Thương Của Phật Giáo">Lòng yêu thương của Phật giáo</option>
         <option value="output_quiz_data_3.json" data-title="Quán Thân Vô Thường">Quán Thân Vô Thường</option>
-        <option value="output_quiz_data_4.json" data-title="Mở rộng câu hỏi 5 - Bài học thứ 3">Mở rộng câu hỏi 5 - Bài học thứ 3</option>
+        <option value="output_quiz_data_5.json" data-title="Bài học thứ 3: Lòng Yêu Thương Của Phật Giáo">Bài học thứ 3: Lòng Yêu Thương Của Phật Giáo</option>
+    <option value="output_quiz_data_5.json" data-title="Bài học thứ 3: Lòng Yêu Thương Của Phật Giáo" data-new="true">Bài học thứ 3: Lòng Yêu Thương Của Phật Giáo</option>
+    <option value="output_quiz_data_6.json" data-title="8 Phương Pháp Rèn Luyện Nhân Cách KHÔNG NÊN GIẾT HẠI CHÚNG SANH" data-new="true">8 Phương Pháp Rèn Luyện Nhân Cách KHÔNG NÊN GIẾT HẠI CHÚNG SANH</option>
+        <option value="output_quiz_data_4.json" data-title="Thông hiểu câu hỏi 5 - Bài học thứ 3">Thông hiểu câu hỏi 5 - Bài học thứ 3</option>
         <!-- Thêm các bộ khác nếu có -->
     </select>
     
@@ -141,7 +147,33 @@
                     closeBtn.onclick = function() { modal.style.display = 'none'; };
                     modal.onclick = function(e) { if(e.target === modal) modal.style.display = 'none'; };
                 }
-            });
+
+                // Tự động làm nổi bật option mới
+                let hasNew = false;
+                document.querySelectorAll('#quiz-select option[data-new="true"]').forEach(opt => {
+                    // Xóa icon cũ nếu có
+                    opt.innerHTML = opt.textContent.replace(/^✨\s*/, '');
+                    opt.innerHTML = '✨ <span style="color:#e67e22;font-weight:bold;">' + opt.textContent + '</span>';
+                    opt.title = 'Nội dung mới vừa được cập nhật!';
+                    hasNew = true;
+                });
+
+                                // Hiển thị thông báo nổi nếu có nội dung mới
+                                var toast = document.getElementById('toast-new-content');
+                                if (hasNew && toast) {
+                                                        toast.style.display = 'block';
+                                                        setTimeout(function(){
+                                                            toast.style.opacity = 1;
+                                                            toast.style.transform = 'translateY(0)';
+                                                        }, 100);
+                                    toast.onclick = function() {
+                                        document.getElementById('quiz-select').scrollIntoView({behavior:'smooth', block:'center'});
+                                        toast.style.display = 'none';
+                                    };
+                                    // Tự động ẩn sau 8 giây nếu không nhấn
+                                    setTimeout(function(){ toast.style.display = 'none'; }, 8000);
+                                }
+                        });
         </script>
 	    
 </body>
