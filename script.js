@@ -263,7 +263,7 @@ function checkAnswer(isTimeout = false) {
     // Phát âm thanh giải thích sau 8 giây
         setTimeout(() => {
         speakText(currentQuestion.explanation, 'male');
-    }, 8000); // 8000 ms = 8 giây
+    }, 3000); // 3000 ms = 3 giây
 
     if (currentQuestionIndex < data.length - 1) {
         continueButton.classList.remove('hidden');
@@ -377,7 +377,6 @@ async function loadQuizData(jsonFile = 'output_quiz_data.json') {
         score = 0;
         questionsAttempted = [];
         displayQuestion();
-        audioStart.play();
         timerToggle.checked = isTimerEnabled;
     } catch (error) {
         console.error("Could not load quiz data:", error);
@@ -419,6 +418,7 @@ function stopQuestionVoice() {
 
 // Khởi tạo trò chơi khi trang web tải xong
 window.addEventListener('load', () => {
+    audioStart.play(); // Phát âm thanh start.mp3 1 lần duy nhất khi vào trang
     const quizSelect = document.getElementById('quiz-select');
     if (quizSelect) {
         loadQuizData(quizSelect.value);
@@ -559,7 +559,7 @@ function updateTimeline() {
     const weekdaysVi = ['Chủ nhật', 'Thứ Hai', 'Thứ Ba', 'Thứ Tư', 'Thứ Năm', 'Thứ Sáu', 'Thứ Bảy'];
     const thuVi = weekdaysVi[now.getDay()];
     const localStr = `${thuVi}, ${pad(now.getHours())}:${pad(now.getMinutes())}:${pad(now.getSeconds())} - ${pad(now.getDate())}/${pad(now.getMonth() + 1)}/${now.getFullYear()}`;
-    const utcStr = `Giờ UTC: ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())} - ${pad(now.getUTCDate())}/${pad(now.getUTCMonth() + 1)}/${now.getUTCFullYear()}`;
+    const utcStr = `Giờ UTC: ${pad(now.getUTCHours())}:${pad(now.getUTCMinutes())}:${pad(now.getUTCSeconds())} - ${pad(now.getUTCDate())}/${pad(now.getUTCMonth() + 1)}/${pad(now.getUTCFullYear())}`;
     timeline.innerHTML = `${localStr}<br>${utcStr}`;
 }
 setInterval(updateTimeline, 1000);
