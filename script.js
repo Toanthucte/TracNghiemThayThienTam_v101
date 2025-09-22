@@ -380,6 +380,29 @@ timerToggle.addEventListener('change', () => {
     }
 });
 
+// Gắn sự kiện cho nút bật/tắt xáo trộn câu hỏi
+const shuffleToggle = document.getElementById('shuffleToggle');
+shuffleToggle.addEventListener('change', () => {
+    // Lưu lại trạng thái của toggle
+    localStorage.setItem('isShuffleEnabled', shuffleToggle.checked);
+    
+    // Hiển thị thông báo cho người dùng
+    if (shuffleToggle.checked) {
+        console.log('🔀 Chế độ xáo trộn câu hỏi: BẬT');
+    } else {
+        console.log('📚 Chế độ câu hỏi theo thứ tự: BẬT');
+    }
+});
+
+// Khôi phục trạng thái shuffle toggle từ localStorage
+const savedShuffleState = localStorage.getItem('isShuffleEnabled');
+if (savedShuffleState !== null) {
+    shuffleToggle.checked = savedShuffleState === 'true';
+} else {
+    // Mặc định là TẮT (câu hỏi theo thứ tự)
+    shuffleToggle.checked = false;
+}
+
 // Khởi tạo trò chơi khi trang web tải xong
 // Hàm tải dữ liệu câu hỏi từ file JSON
 async function loadQuizData(jsonFile = 'output_quiz_data.json') {
@@ -389,7 +412,13 @@ async function loadQuizData(jsonFile = 'output_quiz_data.json') {
             throw new Error(`HTTP error! status: ${response.status}`);
         }
         data = await response.json();
-        data = shuffleArray(data);
+        
+        // ➤ Chỉ xáo trộn câu hỏi nếu toggle được bật
+        const shuffleToggle = document.getElementById('shuffleToggle');
+        if (shuffleToggle && shuffleToggle.checked) {
+            data = shuffleArray(data);
+        }
+        
         currentQuestionIndex = 0;
         score = 0;
         questionsAttempted = [];
