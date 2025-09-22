@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Thumbnail</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            max-width: 800px; 
+            margin: 0 auto; 
+            padding: 20px;
+        }
+        .test-section {
+            margin: 20px 0;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+        .status {
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .success { background: #d4edda; color: #155724; border: 1px solid #c3e6cb; }
+        .error { background: #f8d7da; color: #721c24; border: 1px solid #f5c6cb; }
+    </style>
+</head>
+<body>
+    <h1>🖼️ Test Thumbnail.png</h1>
+    
+    <div class="test-section">
+        <h2>1. Kiểm tra file local</h2>
+        <p>File thumbnail.png trong thư mục:</p>
+        <img src="thumbnail.png" alt="Local thumbnail" onload="showSuccess('local')" onerror="showError('local')">
+        <div id="local-status" class="status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>2. Kiểm tra URL GitHub Pages</h2>
+        <p>URL: https://toanthucte.github.io/TracNghiemThayThienTam_v101/thumbnail.png</p>
+        <img src="https://toanthucte.github.io/TracNghiemThayThienTam_v101/thumbnail.png" alt="GitHub thumbnail" 
+             onload="showSuccess('github')" onerror="showError('github')">
+        <div id="github-status" class="status"></div>
+    </div>
+
+    <div class="test-section">
+        <h2>3. Meta Tags Test</h2>
+        <p>Các meta tags hiện tại:</p>
+        <pre style="background: #f8f9fa; padding: 10px; border-radius: 5px;">
+&lt;meta property="og:image" content="https://toanthucte.github.io/TracNghiemThayThienTam_v101/thumbnail.png"&gt;
+&lt;meta name="twitter:image" content="https://toanthucte.github.io/TracNghiemThayThienTam_v101/thumbnail.png"&gt;
+&lt;link rel="image_src" href="https://toanthucte.github.io/TracNghiemThayThienTam_v101/thumbnail.png"&gt;
+        </pre>
+    </div>
+
+    <div class="test-section">
+        <h2>4. Thông tin file</h2>
+        <div id="file-info">
+            <p><strong>Kích thước:</strong> ~2.7MB</p>
+            <p><strong>Định dạng:</strong> PNG</p>
+            <p><strong>Mục đích:</strong> Social media sharing thumbnail</p>
+        </div>
+    </div>
+
+    <div class="test-section">
+        <h2>5. Khuyến nghị</h2>
+        <ul>
+            <li>✅ File tồn tại và accessible</li>
+            <li>⚠️ Kích thước khá lớn (2.7MB) - nên tối ưu xuống &lt;1MB</li>
+            <li>✅ Meta tags được cấu hình đúng</li>
+            <li>💡 Có thể test bằng Facebook Sharing Debugger hoặc Twitter Card Validator</li>
+        </ul>
+    </div>
+
+    <script>
+        function showSuccess(type) {
+            const status = document.getElementById(type + '-status');
+            status.className = 'status success';
+            status.innerHTML = '✅ Ảnh load thành công!';
+        }
+        
+        function showError(type) {
+            const status = document.getElementById(type + '-status');
+            status.className = 'status error';
+            status.innerHTML = '❌ Không thể load ảnh!';
+        }
+    </script>
+</body>
+</html>
