@@ -1,0 +1,134 @@
+[
+  {
+    "id": "q_1",
+    "type": "multiple-choice",
+    "questionText": "Hình ảnh con ếch chắp hai chân trước lạy van xin khi bị cắt cổ cho thấy điều gì?",
+    "options": [
+      "Phản xạ tự nhiên của loài vật khi bị tác động mạnh.",
+      "Sự khao khát được sống, thể hiện qua hành động van xin tha mạng của chúng sinh.",
+      "Dấu hiệu cho thấy loài ếch có nhận thức và cảm xúc giống con người."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mặc dù không nói thành lời, hành động chắp tay của con ếch thể hiện sự tha thiết muốn sống, cũng như con người muốn sống."
+  },
+  {
+    "id": "q_2",
+    "type": "multiple-choice",
+    "questionText": "Theo bài học, nguyên nhân sâu xa dẫn đến việc con người làm những hành động độc ác như cắt cổ, lột da động vật là gì?",
+    "options": [
+      "Do tập quán ăn uống, thói quen sinh hoạt từ ngàn xưa.",
+      "Do sự vô minh, không hiểu rõ luật nhân quả nghiệp báo.",
+      "Do con người không có đủ thực phẩm để ăn nên phải ăn thịt động vật."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bài học nhấn mạnh rằng sự độc ác xuất phát từ việc con người vô minh, không hiểu biết nhân quả nghiệp báo"
+  },
+  {
+    "id": "q_3",
+    "type": "multiple-choice",
+    "questionText": "Tại sao người phụ nữ cầm dao cắt cổ con ếch được xem là đáng thương hơn đáng trách?",
+    "options": [
+      "Vì họ là nạn nhân của xã hội, phải làm công việc này để mưu sinh.",
+      "Vì họ là người vô phước, không được học tập và rèn luyện nhân cách làm người.",
+      "Vì họ đang vô tình tự tạo nghiệp xấu cho chính mình mà không hay biết."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Người phụ nữ đáng thương vì họ không hiểu biết luật nhân quả và đang tự cắt cổ chính mình mà không hay biết"
+  },
+  {
+    "id": "q_4",
+    "type": "multiple-choice",
+    "questionText": "Hành động giết hại chúng sinh của con người sẽ dẫn đến hậu quả gì theo luật nhân quả?",
+    "options": [
+      "Gặp phải những điều xui xẻo trong cuộc sống.",
+      "Phải chịu những cái chết đau thương, thảm khốc giống như cách mình đã gây ra cho loài vật.",
+      "Mất đi phước báu, đời sống không được an lạc và hạnh phúc."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bài học chỉ ra rằng những hành động độc ác sẽ khiến con người phải chịu những cái chết đau thương giống như cảnh chiến tranh, thiên tai, bệnh dịch."
+  },
+  {
+    "id": "q_5",
+    "type": "multiple-choice",
+    "questionText": "Lòng thương yêu chúng sinh được bài học đề cao như thế nào?",
+    "options": [
+      "Là điều kiện tiên quyết để trở thành người giàu có, may mắn.",
+      "Là con đường duy nhất đem lại sự bình an cho hành tinh này.",
+      "Là một trong những phẩm chất đạo đức cần có của một người tốt."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bài học kết luận rằng \"Đạo đức Hiếu sinh\" (tình yêu thương sự sống của muôn loài) là con đường duy nhất để mang lại sự bình an cho thế giới này."
+  },
+  {
+    "id": "q_6",
+    "type": "multiple-choice",
+    "questionText": "Ý nghĩa cốt lõi của việc rèn luyện \"đạo đức Hiếu sinh ý hành\" là gì?",
+    "options": [
+      "Nhắc nhở bản thân không nên ăn thịt động vật.",
+      "Luôn tư duy, quán xét về sự đau khổ của chúng sinh để khởi tâm yêu thương.",
+      "Sống hòa hợp với thiên nhiên và bảo vệ môi trường."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Việc tư duy và quán xét những hình ảnh đau thương của chúng sinh sẽ giúp chúng ta khởi lên lòng yêu thương vô bờ bến"
+  },
+  {
+    "id": "q_7",
+    "type": "multiple-choice",
+    "questionText": "Theo bài học, mục đích của việc tu học Phật giáo là gì?",
+    "options": [
+      "Để có một cuộc sống bình yên, an lạc, tránh xa mọi phiền não của thế gian.",
+      "Để sống có đạo đức, không làm khổ mình, khổ người và khổ tất cả chúng sinh.",
+      "Để tích lũy phước báu, giúp bản thân và gia đình có một đời sống ấm no."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bài học khẳng định mục đích của việc tu học Phật giáo là sống có đạo đức, không làm khổ bất kỳ ai, bao gồm cả chính mình và chúng sinh khác."
+  },
+  {
+    "id": "q_8",
+    "type": "multiple-choice",
+    "questionText": "Lòng ích kỷ, nhỏ mọn của con người được bài học diễn tả như thế nào?",
+    "options": [
+      "Chỉ biết lo cho sự sống của bản thân, xem sự sống của loài vật như cỏ rác.",
+      "Gây ra những hành động tội ác tày trời, làm cho con người trở nên hung ác hơn cả ác thú.",
+      "Dẫn đến sự xuống cấp của đạo đức xã hội."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Bài học chỉ ra rằng lòng ích kỷ khiến con người chỉ biết đến sự sống của mình mà coi thường, xem sự sống của loài vật như cỏ rác."
+  },
+  {
+    "id": "q_9",
+    "type": "multiple-choice",
+    "questionText": "Điều gì sẽ xảy ra với những người làm nghề chài lưới, săn bắn theo luật nhân quả?",
+    "options": [
+      "Sẽ gặp tai nạn nghề nghiệp, bị các loài vật trả thù.",
+      "Phải đối mặt với thiên tai như bão tố, sạt lở núi, nhà cửa bị phá hủy.",
+      "Dễ mắc các bệnh tật liên quan đến phổi và hệ tiêu hóa."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bài học đưa ra ví dụ về những người làm nghề chài lưới sẽ bị sóng thần lôi xuống biển làm mồi cho cá tôm, còn những người săn bắn sẽ gặp lũ lụt, sạt lở núi"
+  },
+  {
+    "id": "q_10",
+    "type": "multiple-choice",
+    "questionText": "\"Ác lai ác báo\" có ý nghĩa gì trong bài học này?",
+    "options": [
+      "Người xưa đã đúc kết được một quy luật tự nhiên, rằng cái ác sẽ không tồn tại mãi mãi.",
+      "Con người làm việc ác thì sẽ phải chịu lấy những quả báo khổ đau, đúng như câu nói \"gieo nhân nào gặt quả ấy\".",
+      "Kẻ ác sẽ luôn luôn bị trừng phạt bởi pháp luật hoặc một thế lực siêu nhiên nào đó."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "\"Ác lai ác báo\" được giải thích là con người làm điều ác thì sẽ phải chịu những kết quả khổ đau, vì luật nhân quả rất công bằng."
+  },
+  {
+    "id": "q_11",
+    "type": "multiple-choice",
+    "questionText": "Con đường nào giúp diệt trừ vô minh, thoát khỏi vòng giết hại?",
+    "options": [
+      "Giữ giới không sát sinh.",
+      "Thực hành Bát Thánh Đạo.",
+      "Nuôi dưỡng Tứ Vô Lượng Tâm."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Giữ giới và tu tập từ bi đều nằm trong Bát Thánh Đạo; nhưng toàn diện nhất chính là con đường này."
+  }
+]
