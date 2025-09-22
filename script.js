@@ -607,14 +607,17 @@ document.addEventListener('click', (e) => {
  * Hiển thị ảnh câu hỏi nếu có
  */
 async function displayQuestionImage() {
-    if (!currentQuizFile || currentQuestionIndex < 0) return;
+    if (!currentQuizFile || currentQuestionIndex < 0 || !data[currentQuestionIndex]) return;
     
-    const imagePath = await getQuestionImagePath(currentQuizFile, currentQuestionIndex + 1);
+    const currentQuestion = data[currentQuestionIndex];
+    const questionId = currentQuestion.id; // Sử dụng ID từ JSON (q_1, q_2, ...)
+    
+    const imagePath = await getQuestionImageByQuestionId(currentQuizFile, questionId);
     
     if (imagePath) {
         questionImage.src = imagePath;
         questionImage.style.display = 'block';
-        questionImage.alt = `Ảnh minh họa câu ${currentQuestionIndex + 1}`;
+        questionImage.alt = `Ảnh minh họa: ${currentQuestion.questionText.substring(0, 50)}...`;
     } else {
         questionImage.style.display = 'none';
     }
@@ -624,14 +627,17 @@ async function displayQuestionImage() {
  * Hiển thị ảnh giải thích nếu có
  */
 async function displayExplanationImage() {
-    if (!currentQuizFile || currentQuestionIndex < 0) return;
+    if (!currentQuizFile || currentQuestionIndex < 0 || !data[currentQuestionIndex]) return;
     
-    const imagePath = await getQuestionImagePath(currentQuizFile, currentQuestionIndex + 1, 'explanation');
+    const currentQuestion = data[currentQuestionIndex];
+    const questionId = currentQuestion.id; // Sử dụng ID từ JSON (q_1, q_2, ...)
+    
+    const imagePath = await getQuestionImageByQuestionId(currentQuizFile, questionId, 'explanation');
     
     if (imagePath) {
         explanationImage.src = imagePath;
         explanationImage.style.display = 'block';
-        explanationImage.alt = `Ảnh giải thích câu ${currentQuestionIndex + 1}`;
+        explanationImage.alt = `Ảnh giải thích: ${currentQuestion.questionText.substring(0, 50)}...`;
     } else {
         explanationImage.style.display = 'none';
     }

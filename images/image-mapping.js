@@ -73,6 +73,43 @@ async function getQuestionImagePath(jsonFile, questionNumber, type = 'question')
 }
 
 /**
+ * Lấy ảnh cho câu hỏi dựa trên questionId (để đảm bảo ảnh đúng sau khi shuffle)
+ * @param {string} jsonFile - Tên file JSON
+ * @param {string} questionId - ID của câu hỏi (vd: "q_1", "q_2")
+ * @param {string} type - Loại ảnh ('question' hoặc 'explanation')
+ * @returns {Promise<string|null>} Đường dẫn ảnh câu hỏi hoặc null nếu không tìm thấy
+ */
+async function getQuestionImageByQuestionId(jsonFile, questionId, type = 'question') {
+  // Lấy số ID từ tên file
+  let lessonId = '';
+  if (jsonFile === 'output_quiz_data.json') {
+    lessonId = '0'; // File gốc không có số
+  } else {
+    // Lấy số từ output_quiz_data_X.json
+    const match = jsonFile.match(/output_quiz_data_(\d+)\.json/);
+    lessonId = match ? match[1] : '0';
+  }
+  
+  // Lấy số từ questionId (q_1 -> 1, q_2 -> 2)
+  const questionNumber = questionId.replace('q_', '');
+  
+  const suffix = type === 'explanation' ? '_explanation' : '';
+  const basePath = `images/questions/data-${lessonId}_q${questionNumber}${suffix}`;
+  
+  // Thử các định dạng khác nhau
+  const extensions = ['.png', '.jpg', '.jpeg', '.webp'];
+  
+  for (const ext of extensions) {
+    const fullPath = basePath + ext;
+    if (await imageExists(fullPath)) {
+      return fullPath;
+    }
+  }
+  
+  return null; // Không tìm thấy ảnh
+}
+
+/**
  * Kiểm tra ảnh có tồn tại không
  * @param {string} imagePath - Đường dẫn ảnh
  * @returns {Promise<boolean>} True nếu ảnh tồn tại
@@ -134,6 +171,7 @@ if (typeof module !== 'undefined' && module.exports) {
     IMAGE_TYPES,
     getImagePath,
     getQuestionImagePath,
+    getQuestionImageByQuestionId,
     imageExists,
     addQuestionImage,
     loadLessonCoverImage
