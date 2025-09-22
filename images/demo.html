@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demo Ảnh Minh Họa</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../images/image-styles.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🖼️ Demo Ảnh Minh Họa Bài 7</h1>
+        
+        <h2>📸 Ảnh câu hỏi có sẵn:</h2>
+        <div class="concept-gallery">
+            <div>
+                <img src="../images/questions/data-7_q1.png" class="concept-image" alt="Câu hỏi 1">
+                <p class="image-caption">Câu 1: Con ếch chắp tay</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q2.png" class="concept-image" alt="Câu hỏi 2">
+                <p class="image-caption">Câu 2: Nguyên nhân vô minh</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q3.png" class="concept-image" alt="Câu hỏi 3">
+                <p class="image-caption">Câu 3: Người phụ nữ đáng thương</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q4.png" class="concept-image" alt="Câu hỏi 4">
+                <p class="image-caption">Câu 4: Luật nhân quả</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q5.png" class="concept-image" alt="Câu hỏi 5">
+                <p class="image-caption">Câu 5: Lòng thương yêu chúng sinh</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q6.png" class="concept-image" alt="Câu hỏi 6">
+                <p class="image-caption">Câu 6: Đạo đức hiếu sinh</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q7.png" class="concept-image" alt="Câu hỏi 7">
+                <p class="image-caption">Câu 7: Mục đích tu học Phật giáo</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q8.png" class="concept-image" alt="Câu hỏi 8">
+                <p class="image-caption">Câu 8: Lòng ích kỷ</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q9.png" class="concept-image" alt="Câu hỏi 9">
+                <p class="image-caption">Câu 9: Nghiệp báo săn bắn</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q10.png" class="concept-image" alt="Câu hỏi 10">
+                <p class="image-caption">Câu 10: Ác lai ác báo</p>
+            </div>
+            <div>
+                <img src="../images/questions/data-7_q11.png" class="concept-image" alt="Câu hỏi 11">
+                <p class="image-caption">Câu 11: Bát Thánh Đạo</p>
+            </div>
+        </div>
+        
+        <div style="margin-top: 30px; text-align: center;">
+            <a href="../index.html" class="submit-button">🔙 Quay lại trang chính</a>
+        </div>
+    </div>
+
+    <script>
+        // Thêm lightbox cho demo
+        document.querySelectorAll('.concept-image').forEach(img => {
+            img.style.cursor = 'pointer';
+            img.addEventListener('click', () => {
+                const lightbox = document.createElement('div');
+                lightbox.className = 'lightbox';
+                lightbox.style.display = 'block';
+                lightbox.innerHTML = `
+                    <div class="lightbox-content">
+                        <span class="lightbox-close" style="position:absolute;top:15px;right:25px;color:white;font-size:30px;cursor:pointer;">&times;</span>
+                        <img src="${img.src}" style="width:100%;height:auto;border-radius:8px;" alt="${img.alt}">
+                    </div>
+                `;
+                document.body.appendChild(lightbox);
+                
+                lightbox.querySelector('.lightbox-close').addEventListener('click', () => {
+                    document.body.removeChild(lightbox);
+                });
+                
+                lightbox.addEventListener('click', (e) => {
+                    if (e.target === lightbox) {
+                        document.body.removeChild(lightbox);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -25,6 +25,11 @@ const reviewButton = document.getElementById('review-button');
 const timerDisplay = document.getElementById('timerDisplay'); // Hiển thị đồng hồ
 const timerToggle = document.getElementById('timerToggle');   // Nút bật/tắt timer
 
+// Các phần tử cho ảnh minh họa
+const lessonCover = document.getElementById('lesson-cover');
+const questionImage = document.getElementById('question-image');
+const explanationImage = document.getElementById('explanation-image');
+
 // Biến trạng thái trò chơi
 let currentQuestionIndex = 0;
 let score = 0;
@@ -39,6 +44,7 @@ const WARNING_TIME = 3;     // Thời gian còn lại để phát cảnh báo (g
 const TIMEOUT_AUDIO_TRIGGER_TIME = 15; // Âm thanh timeout sẽ phát khi còn 15 giây
 let timeLeft = TIME_PER_QUESTION; // Thời gian còn lại hiện tại
 let isTimerEnabled = false; // Trạng thái bật/tắt của timer, mặc định là bật
+let currentQuizFile = 'output_quiz_data.json'; // File JSON hiện tại
 
 // Tải âm thanh
 const audioCorrect = new Audio('sounds/correct.mp3');
@@ -154,6 +160,9 @@ function displayQuestion() {
     }, 8000);
     questionText.textContent = currentQuestion.questionText; // SỬA: 'question' -> 'questionText'
 
+    // ➤ Hiển thị ảnh câu hỏi nếu có
+    displayQuestionImage();
+
     choicesContainer.innerHTML = ''; // Xóa các lựa chọn cũ
     selectedChoice = -1; // Reset lựa chọn
 
@@ -260,6 +269,10 @@ function checkAnswer(isTimeout = false) {
     submitButton.classList.add('hidden');
     explanationArea.classList.remove('hidden');
     explanationText.textContent = currentQuestion.explanation;
+    
+    // ➤ Hiển thị ảnh giải thích nếu có
+    displayExplanationImage();
+    
     // Phát âm thanh giải thích sau 8 giây
         setTimeout(() => {
         speakText(currentQuestion.explanation, 'male');
@@ -337,6 +350,10 @@ function restartGame() {
     score = 0;
     selectedChoice = -1;
     questionsAttempted = [];
+    
+    // ➤ Ẩn tất cả ảnh cũ
+    hideAllImages();
+    
     displayQuestion(); // Bắt đầu lại
 }
 
@@ -376,6 +393,11 @@ async function loadQuizData(jsonFile = 'output_quiz_data.json') {
         currentQuestionIndex = 0;
         score = 0;
         questionsAttempted = [];
+        
+        // ➤ Cập nhật file hiện tại và load ảnh bìa
+        currentQuizFile = jsonFile;
+        await loadLessonCoverImage(jsonFile);
+        
         displayQuestion();
         timerToggle.checked = isTimerEnabled;
     } catch (error) {
@@ -578,3 +600,94 @@ document.addEventListener('click', (e) => {
         toolbarPanel.classList.remove('active');
     }
 });
+
+// ➤ === FUNCTIONS CHO ẢNH MINH HỌA === //
+
+/**
+ * Hiển thị ảnh câu hỏi nếu có
+ */
+async function displayQuestionImage() {
+    if (!currentQuizFile || currentQuestionIndex < 0) return;
+    
+    const imagePath = await getQuestionImagePath(currentQuizFile, currentQuestionIndex + 1);
+    
+    if (imagePath) {
+        questionImage.src = imagePath;
+        questionImage.style.display = 'block';
+        questionImage.alt = `Ảnh minh họa câu ${currentQuestionIndex + 1}`;
+    } else {
+        questionImage.style.display = 'none';
+    }
+}
+
+/**
+ * Hiển thị ảnh giải thích nếu có
+ */
+async function displayExplanationImage() {
+    if (!currentQuizFile || currentQuestionIndex < 0) return;
+    
+    const imagePath = await getQuestionImagePath(currentQuizFile, currentQuestionIndex + 1, 'explanation');
+    
+    if (imagePath) {
+        explanationImage.src = imagePath;
+        explanationImage.style.display = 'block';
+        explanationImage.alt = `Ảnh giải thích câu ${currentQuestionIndex + 1}`;
+    } else {
+        explanationImage.style.display = 'none';
+    }
+}
+
+/**
+ * Ẩn tất cả ảnh khi restart game
+ */
+function hideAllImages() {
+    questionImage.style.display = 'none';
+    explanationImage.style.display = 'none';
+}
+
+/**
+ * Thêm lightbox cho ảnh khi click
+ */
+function initImageLightbox() {
+    // Tạo lightbox element
+    const lightbox = document.createElement('div');
+    lightbox.className = 'lightbox';
+    lightbox.innerHTML = `
+        <div class="lightbox-content">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" alt="Ảnh phóng to">
+        </div>
+    `;
+    document.body.appendChild(lightbox);
+    
+    const lightboxImg = lightbox.querySelector('#lightbox-img');
+    const closeBtn = lightbox.querySelector('.lightbox-close');
+    
+    // Event listener cho các ảnh
+    [questionImage, explanationImage, lessonCover].forEach(img => {
+        img.addEventListener('click', () => {
+            if (img.style.display !== 'none' && img.src) {
+                lightboxImg.src = img.src;
+                lightboxImg.alt = img.alt;
+                lightbox.style.display = 'block';
+            }
+        });
+        
+        // Thêm cursor pointer
+        img.style.cursor = 'pointer';
+    });
+    
+    // Đóng lightbox
+    closeBtn.addEventListener('click', () => {
+        lightbox.style.display = 'none';
+    });
+    
+    lightbox.addEventListener('click', (e) => {
+        if (e.target === lightbox) {
+            lightbox.style.display = 'none';
+        }
+    });
+}
+
+// Khởi tạo lightbox khi DOM loaded
+document.addEventListener('DOMContentLoaded', initImageLightbox);

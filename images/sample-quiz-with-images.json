@@ -1,0 +1,45 @@
+{
+  "lessonInfo": {
+    "id": "lesson_7",
+    "title": "Những bàn tay vấy máu",
+    "description": "Bài học về đức hiếu sinh và lòng thương yêu chúng sinh",
+    "coverImage": "images/lessons/nhung-ban-tay-vay-mau/cover.jpg",
+    "introImage": "images/lessons/nhung-ban-tay-vay-mau/intro.jpg",
+    "conceptImages": [
+      "images/lessons/nhung-ban-tay-vay-mau/concept-1.jpg",
+      "images/lessons/nhung-ban-tay-vay-mau/concept-2.jpg",
+      "images/lessons/nhung-ban-tay-vay-mau/concept-3.jpg"
+    ],
+    "summaryImage": "images/lessons/nhung-ban-tay-vay-mau/summary.jpg"
+  },
+  "questions": [
+    {
+      "id": "q_1",
+      "type": "multiple-choice",
+      "questionText": "Hình ảnh con ếch chắp hai chân trước lạy van xin khi bị cắt cổ cho thấy điều gì?",
+      "image": "images/questions/data-7_q1.jpg",
+      "options": [
+        "Phản xạ tự nhiên của loài vật khi bị tác động mạnh.",
+        "Sự khao khát được sống, thể hiện qua hành động van xin tha mạng của chúng sinh.",
+        "Dấu hiệu cho thấy loài ếch có nhận thức và cảm xúc giống con người."
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Mặc dù không nói thành lời, hành động chắp tay của con ếch thể hiện sự tha thiết muốn sống, cũng như con người muốn sống.",
+      "explanationImage": "images/questions/data-7_q1_explanation.jpg"
+    },
+    {
+      "id": "q_2",
+      "type": "multiple-choice",
+      "questionText": "Theo bài học, nguyên nhân sâu xa dẫn đến việc con người làm những hành động độc ác như cắt cổ, lột da động vật là gì?",
+      "image": "images/questions/data-7_q2.jpg",
+      "options": [
+        "Do tập quán ăn uống, thói quen sinh hoạt từ ngàn xưa.",
+        "Do sự vô minh, không hiểu rõ luật nhân quả nghiệp báo.",
+        "Do con người không có đủ thực phẩm để ăn nên phải ăn thịt động vật."
+      ],
+      "correctAnswerIndex": 1,
+      "explanation": "Bài học nhấn mạnh rằng sự độc ác xuất phát từ việc con người vô minh, không hiểu biết nhân quả nghiệp báo",
+      "explanationImage": "images/questions/data-7_q2_explanation.jpg"
+    }
+  ]
+}
