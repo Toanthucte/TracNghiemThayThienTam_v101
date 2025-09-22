@@ -2,9 +2,7 @@
 <html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-widt        </div>
-
-        <div class="quiz-selector-container">cale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>L5G</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="images/image-styles.css">
@@ -70,6 +68,7 @@
         <label for="quiz-select">Chọn bộ câu hỏi:</label>
     <select id="quiz-select">
         <option value="output_quiz_data.json" data-title="Lời Nói Đầu">Lời nói đầu</option>
+        <option value="output_quiz_data_7.json" data-title="NHỮNG BÀI TAY VẤY MÁU" data-new="true">Những bàn tay vấy máu</option>
         <option value="output_quiz_data_1.json" data-title="Nghi lễ của Niệm Phật">Nghi lễ của Niệm Phật</option>
         <option value="output_quiz_data_2.json" data-title="Lòng Yêu Thương Của Phật Giáo">Lòng yêu thương của Phật giáo</option>
         <option value="output_quiz_data_3.json" data-title="Quán Thân Vô Thường">Quán Thân Vô Thường</option>
@@ -77,7 +76,7 @@
         <option value="output_quiz_data_5.json" data-title="Bài học thứ 3: Lòng Yêu Thương Của Phật Giáo" >Bài học thứ 3: Lòng Yêu Thương Của Phật Giáo</option>
         <option value="output_quiz_data_6.json" data-title="8 Phương Pháp Rèn Luyện Nhân Cách KHÔNG NÊN GIẾT HẠI CHÚNG SANH" >8 Phương Pháp Rèn Luyện Nhân Cách KHÔNG NÊN GIẾT HẠI CHÚNG SANH</option>
         <option value="output_quiz_data_4.json" data-title="Thông hiểu câu hỏi 5 - Bài học thứ 3">Thông hiểu câu hỏi 5 - Bài học thứ 3</option>
-        <option value="output_quiz_data_7.json" data-title="NHỮNG BÀI TAY VẤY MÁU" data-new="true">Những bàn tay vấy máu</option>
+        
         <!-- Thêm các bộ khác nếu có -->
     </select>
     
@@ -122,13 +121,7 @@
         </div>
 
         <!-- ➤ Chế độ xáo trộn câu hỏi -->
-        <div class="shuffle-controls-container">
-            <div class="toggle-switch">
-                <input type="checkbox" id="shuffleToggle">
-                <label for="shuffleToggle" class="slider"></label>
-                <span class="toggle-text">🔀 Xáo trộn câu hỏi</span>
-            </div>
-        </div>
+        
 
         <div id="question-area" class="question-area">
             <p id="question-text" class="question-text">Câu hỏi sẽ hiển thị ở đây.</p>
