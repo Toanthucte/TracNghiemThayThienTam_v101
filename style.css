@@ -377,18 +377,7 @@ h1 {
     box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
 }
 
-/* Shuffle controls container */
-.shuffle-controls-container {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-    margin-bottom: 20px;
-    padding: 12px 20px;
-    background-color: #fff8e1;
-    border-radius: 10px;
-    box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
-    border-left: 4px solid #ff9800;
-}
+
 
 .timer-display {
     font-size: 1.8em;
@@ -575,4 +564,24 @@ input:checked + .slider:before {
 }
 .toolbar-btn:hover {
     background: #f9e79f;
+}
+
+/* Toolbar toggle item styling */
+.toolbar-toggle-item {
+    padding: 8px 0;
+    border-top: 1px solid #f1c40f;
+    margin-top: 4px;
+}
+
+.toolbar-toggle-item .toggle-switch {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    justify-content: flex-start;
+}
+
+.toolbar-toggle-item .toggle-text {
+    font-size: 0.85rem;
+    color: #b9770e;
+    font-weight: 500;
 }
