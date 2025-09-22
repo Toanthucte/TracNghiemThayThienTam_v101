@@ -262,6 +262,12 @@ function checkAnswer(isTimeout = false) {
     if (isCorrect) {
         score++;
         audioCorrect.play();
+        
+        // ➤ Dừng âm thanh correct sau 3 giây
+        setTimeout(() => {
+            audioCorrect.pause();
+            audioCorrect.currentTime = 0;
+        }, 3000);
     } else {
         audioWrong.play();
     }
