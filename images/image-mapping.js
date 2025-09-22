@@ -46,7 +46,16 @@ function getImagePath(jsonFile, imageType) {
  * @returns {Promise<string|null>} Đường dẫn ảnh câu hỏi hoặc null nếu không tìm thấy
  */
 async function getQuestionImagePath(jsonFile, questionNumber, type = 'question') {
-  const lessonId = jsonFile.replace('.json', '').replace('output_quiz_', '');
+  // Lấy số ID từ tên file
+  let lessonId = '';
+  if (jsonFile === 'output_quiz_data.json') {
+    lessonId = '0'; // File gốc không có số
+  } else {
+    // Lấy số từ output_quiz_data_X.json
+    const match = jsonFile.match(/output_quiz_data_(\d+)\.json/);
+    lessonId = match ? match[1] : '0';
+  }
+  
   const suffix = type === 'explanation' ? '_explanation' : '';
   const basePath = `images/questions/data-${lessonId}_q${questionNumber}${suffix}`;
   
