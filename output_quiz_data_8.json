@@ -1,0 +1,218 @@
+[
+  {
+    "id": "q_1",
+    "type": "multiple-choice",
+    "questionText": "Nguyên nhân chính khiến người vợ trẻ trong câu chuyện phạm tội là gì?",
+    "options": [
+      "Vì chồng không yêu thương mình.",
+      "Vì hoàn cảnh gia đình quá nghèo.",
+      "Vì cơn giận dữ không được kiềm chế."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Căn nguyên là tâm sân hận bốc lên, khiến mất lý trí, hành động như người điên dại."
+  },
+  {
+    "id": "q_2",
+    "type": "multiple-choice",
+    "questionText": "Đức Phật dạy: “Thắng trăm trận không bằng thắng mình” có nghĩa là gì?",
+    "options": [
+      "Chiến thắng người khác mới là chiến thắng thật.",
+      "Cần tránh tranh cãi để khỏi phiền phức.",
+      "Tự kiềm chế cảm xúc và làm chủ bản thân là chiến thắng lớn nhất."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "“Thắng mình” là thắng được tham – sân – si, giữ được tâm bình tĩnh trong nghịch cảnh."
+  },
+  {
+    "id": "q_3",
+    "type": "multiple-choice",
+    "questionText": "Khi bị người khác chửi mắng, hành xử nào thể hiện đúng đạo đức hiếu sinh?",
+    "options": [
+      "Đáp trả để chứng minh mình đúng.",
+      "Im lặng, nhẫn nhịn, tránh xung đột.",
+      "Tránh mặt hoàn toàn, không bao giờ tiếp xúc lại."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Nhẫn nhịn giúp dừng nghiệp ác, không tạo thêm nhân xấu."
+  },
+  {
+    "id": "q_4",
+    "type": "multiple-choice",
+    "questionText": "Hành động đốt nhà của người mẹ trong câu chuyện thể hiện sự thiếu vắng đạo đức nào?",
+    "options": [
+      "Thiếu đức hiếu sinh thân hành.",
+      "Thiếu đức tha thứ.",
+      "Thiếu đức kính trọng cha mẹ."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Hành động đốt nhà, giết con là vi phạm thân hành hiếu sinh - gây đau khổ cho mình và người."
+  },
+  {
+    "id": "q_5",
+    "type": "multiple-choice",
+    "questionText": "Vì sao cháu Nhựt phải chịu cái chết thương tâm?",
+    "options": [
+      "Vì cha mẹ cãi nhau.",
+      "Vì sống trong nhà gỗ dễ cháy.",
+      "Vì nghiệp nhân quá khứ sát sinh, thiêu đốt sinh mạng."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Theo nhân quả, nghiệp giết hại thiêu đốt chúng sanh trong quá khứ nên dẫn đến quả báo bị chết cháy."
+  },
+  {
+    "id": "q_6",
+    "type": "multiple-choice",
+    "questionText": "Người chồng trong câu chuyện là người đáng thương bởi vì:",
+    "options": [
+      "Không biết hóa giải xung đột.",
+      "Không biết giữ gìn hạnh phúc gia đình.",
+      "Không quan tâm đến vợ con."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Anh ta thiếu đạo đức gia đình, không biết hóa giải xung đột, nên dẫn đến hậu quả bi thương."
+  },
+  {
+    "id": "q_7",
+    "type": "multiple-choice",
+    "questionText": "Khi thấy người khác đang giận dữ, người học đạo nên làm gì?",
+    "options": [
+      "Tránh xa để khỏi liên lụy.",
+      "Thương xót họ vì họ đang khổ.",
+      "Lên án những hành động nguy hiểm ấy"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Người đang sân là người đang bị thiêu đốt trong “hỏa ngục nội tâm”, đáng được thương hơn ghét."
+  },
+  {
+    "id": "q_8",
+    "type": "multiple-choice",
+    "questionText": "“Nhất niệm tâm sân khởi, bách vạn chướng môn khai” nghĩa là:",
+    "options": [
+      "Khi sân hận khởi lên, muôn điều xấu mở ra.",
+      "Khi tức giận, nên im lặng.",
+      "Cần nhớ lỗi người khác để tránh tái phạm."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Một cơn sân nhỏ có thể dẫn đến vô số nghiệp ác, khổ đau cho nhiều người."
+  },
+  {
+    "id": "q_9",
+    "type": "multiple-choice",
+    "questionText": "Vì sao người có tâm giận dữ bị xem là mất nhân tính?",
+    "options": [
+      "Vì không còn sáng suốt và thương người.",
+      "Vì hành động bốc đồng.",
+      "Vì nói năng thiếu lễ phép."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Khi sân hận trỗi dậy, lý trí bị che mờ, lòng nhân biến mất, hành động như thú dữ."
+  },
+  {
+    "id": "q_10",
+    "type": "multiple-choice",
+    "questionText": "Thùy mắng chửi chồng trước mặt cha mẹ chồng phạm lỗi gì?",
+    "options": [
+      "Thiếu đức hiếu sinh khẩu hành.",
+      "Thiếu đức tôn trọng người trên.",
+      "Thiếu đức lễ độ."
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Lời nói ác là khẩu hành ác, gây tổn thương và chia rẽ, trái với lời nói ái ngữ."
+  },
+  {
+    "id": "q_11",
+    "type": "multiple-choice",
+    "questionText": "Khi người khác nói xấu mình, cách ứng xử theo đạo Phật là gì?",
+    "options": [
+      "Nói lại cho hả giận.",
+      "Giải thích để minh oan.",
+      "Im lặng, giữ tâm an, để thời gian chứng minh."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Người có trí không cần biện bạch, vì nhân quả sẽ tự sáng tỏ."
+  },
+  {
+    "id": "q_12",
+    "type": "multiple-choice",
+    "questionText": "Lòng yêu thương và tha thứ có tác dụng gì trong việc rèn nhân cách?",
+    "options": [
+      "Làm người khác yêu quý mình hơn.",
+      "Làm giảm sân hận, chuyển hóa nhân quả ác.",
+      "Khiến cuộc sống nhẹ nhàng hơn."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chỉ có lòng yêu thương mới dập tắt được lửa sân và thay đổi nghiệp quả."
+  },
+  {
+    "id": "q_13",
+    "type": "multiple-choice",
+    "questionText": "Gia đình vợ chồng Công gặp bi kịch là do đâu?",
+    "options": [
+      "Không có người khuyên bảo.",
+      "Do hoàn cảnh nghèo khó.",
+      "Do nghiệp sân hận và thiếu tu học đạo đức."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Cội gốc khổ đau không phải từ nghèo khó mà từ tâm sân và thiếu lòng thương."
+  },
+  {
+    "id": "q_14",
+    "type": "multiple-choice",
+    "questionText": "Cách tốt nhất để diệt trừ tâm giận dữ là:",
+    "options": [
+      "Cố gắng kìm nén cơn giận.",
+      "Tránh tiếp xúc với người làm mình giận.",
+      "Nuôi dưỡng lòng yêu thương và tha thứ."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Chỉ khi tâm đầy từ bi, sân hận mới tan; kìm nén chỉ là tạm thời."
+  },
+  {
+    "id": "q_15",
+    "type": "multiple-choice",
+    "questionText": "Khi người khác nóng giận, nói lời xúc phạm mình, ta nên chọn cách nói nào để thể hiện đức hiếu sinh khẩu hành?",
+    "options": [
+      "Nói lại nhẹ nhàng nhưng vẫn giữ quan điểm của mình.",
+      "Im lặng, chờ lúc họ bình tĩnh mới góp ý.",
+      "Giải thích ngay để tránh hiểu lầm."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đức hiếu sinh trong lời nói là không thêm dầu vào lửa, biết chọn thời điểm thích hợp, không làm tổn thương thêm."
+  },
+  {
+    "id": "q_16",
+    "type": "multiple-choice",
+    "questionText": "Đức hiếu sinh khẩu hành được biểu hiện rõ nhất trong tình huống nào sau đây?",
+    "options": [
+      "Luôn nói thật, dù có làm người khác buồn.",
+      "Nói lời tùy thuận theo ý người khác",
+      "Tránh nói những điều gây tranh luận."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Khẩu hành hiếu sinh không chỉ là nói thật, mà còn là nói sao cho người nghe được an vui, không tổn thương."
+  },
+  {
+    "id": "q_17",
+    "type": "multiple-choice",
+    "questionText": "Vì sao “nói ác, nói dối, nói chia rẽ” lại được xem là vi phạm đức hiếu sinh?",
+    "options": [
+      "Vì dễ mất lòng tin.",
+      "Vì làm tổn thương tâm người khác và gieo nhân quả khổ đau.",
+      "Vì không hợp với chuẩn mực đạo đức xã hội."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mỗi lời nói ác là một “mũi tên vô hình” gây đau đớn tinh thần - đó là hình thức sát sinh bằng lời nói."
+  },
+  {
+    "id": "q_18",
+    "type": "multiple-choice",
+    "questionText": "Để rèn luyện đức hiếu sinh khẩu hành hằng ngày, việc nào dưới đây là đúng nhất?",
+    "options": [
+      "Tập nói năng nhỏ nhẹ, tránh lớn tiếng.",
+      "Tập ít nói để dễ kiểm soát lời nói.",
+      "Giữ im lặng là cách tốt nhất để khỏi phạm lỗi."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Giữ chánh niệm trước khi nói giúp ta kiểm soát tâm. Vì đang còn làm việc và giao tiếp nên tập ít nói để dễ kiểm soát hơn, còn khi vào môi trường tu tập thì giữ im lặng là cách tốt nhất."
+  }
+]
