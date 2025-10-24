@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q_1",
+    "type": "multiple-choice",
+    "questionText": "Thành Cát Tư Hãn mang theo con chim ưng bên mình để làm gì?",
+    "options": [
+      "Để giúp săn bắn và bảo vệ chủ khi đi rừng",
+      "Vì xem chim ưng là bạn trung thành, gắn bó trên mọi chiến trường",
+      "Vì người Mông Cổ coi chim ưng là linh vật may mắn"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Ông mang chim ưng không chỉ để săn bắn mà vì tình bạn, sự gắn bó – thể hiện mối quan hệ nhân ái giữa người và loài vật."
+  },
+  {
+    "id": "q_2",
+    "type": "multiple-choice",
+    "questionText": "Vì sao con chim ưng nhiều lần làm đổ cốc nước của Thành Cát Tư Hãn?",
+    "options": [
+      "Vì nó thấy nước không sạch, sợ chủ bệnh",
+      "Vì nó linh cảm có điều chẳng lành trong nguồn nước",
+      "Vì nó muốn cứu chủ khỏi uống phải nước có độc"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Chim ưng hành động với ý thức hiếu sinh, chấp nhận chết để cứu người, biểu hiện tình thương vượt bản năng."
+  },
+  {
+    "id": "q_3",
+    "type": "multiple-choice",
+    "questionText": "Hành động đó của con chim ưng thể hiện điều gì?",
+    "options": [
+      "Lòng trung thành sẵn sàng hy sinh",
+      "Đức hiếu sinh thân hành, thương người hơn mình",
+      "Bản năng bảo vệ chủ của loài vật"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Đây không chỉ là trung thành, mà là đạo đức hiếu sinh thân hành, đặt sự sống của người khác lên trên bản thân."
+  },
+  {
+    "id": "q_4",
+    "type": "multiple-choice",
+    "questionText": "Vì sao Thành Cát Tư Hãn giết chết chim ưng?",
+    "options": [
+      "Vì quá khát và tức giận",
+      "Vì không hiểu được ý tốt của con chim",
+      "Vì sân hận che mất trí sáng suốt"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Cơn sân khiến tâm trí mờ tối, không còn trí tuệ để phân biệt đúng sai — đây là gốc của mọi sai lầm."
+  },
+  {
+    "id": "q_5",
+    "type": "multiple-choice",
+    "questionText": "Hành động giết chim ưng nói lên điều gì về đạo đức con người?",
+    "options": [
+      "Con người dễ mất bình tĩnh khi bị nghịch ý",
+      "Khi thiếu hiếu sinh, con người dễ trở nên độc ác",
+      "Giận dữ khiến ta quên mất lòng nhân"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Cả ba đều đúng, nhưng sâu nhất là thiếu đức hiếu sinh, vì khi tâm không còn thương yêu, con người dễ sa vào tội ác."
+  },
+  {
+    "id": "q_6",
+    "type": "multiple-choice",
+    "questionText": "Khi mắng con chim “đồ khốn kiếp”, Thành Cát Tư Hãn đã phạm vào điều gì?",
+    "options": [
+      "Lời nói thiếu ái ngữ, phát sinh từ tâm sân",
+      "Lời nói thiếu tôn trọng sinh mạng",
+      "Lời nói không đúng lúc, tạo nghiệp khẩu"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Mọi lời nói thiếu ái ngữ đều xuất phát từ tâm sân. Ái ngữ là biểu hiện của lòng từ bi và hiểu biết."
+  },
+  {
+    "id": "q_7",
+    "type": "multiple-choice",
+    "questionText": "Khi thấy xác rắn độc trong vũng nước, Thành Cát Tư Hãn hiểu ra điều gì?",
+    "options": [
+      "Con chim ưng đã cứu mạng mình",
+      "Mọi việc xảy ra đều có nhân quả",
+      "Giận dữ luôn đem lại hậu quả đau lòng"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Ông nhận ra lòng trung và tình thương của con chim, từ đó sinh tâm hối hận và tỉnh ngộ sâu sắc."
+  },
+  {
+    "id": "q_8",
+    "type": "multiple-choice",
+    "questionText": "Sự hối hận của Thành Cát Tư Hãn thể hiện loại đạo đức nào?",
+    "options": [
+      "Hiếu sinh thân hành – biết sửa lỗi bằng hành động",
+      "Hiếu sinh khẩu hành – biết nói lời sám hối",
+      "Hiếu sinh ý hành – biết ăn năn và chuyển tâm thiện"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Khi hối hận và phát tâm sửa sai, đó là ý hành hiếu sinh, biểu hiện của sự tỉnh thức trong nội tâm."
+  },
+  {
+    "id": "q_9",
+    "type": "multiple-choice",
+    "questionText": "Bài học lớn nhất mà Thành Cát Tư Hãn rút ra được là gì?",
+    "options": [
+      "Không nên hành động khi đang tức giận",
+      "Cần cảnh giác với mọi việc xung quanh",
+      "Hãy nghe theo trực giác của mình"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Tức giận là lúc tâm mù lòa. Người biết dừng lại trong cơn giận chính là người có trí tuệ và đức hiếu sinh."
+  },
+  {
+    "id": "q_10",
+    "type": "multiple-choice",
+    "questionText": "Người có tâm sân hận thường mất đi điều gì quan trọng nhất?",
+    "options": [
+      "Lòng thương và trí sáng",
+      "Tình cảm và niềm tin",
+      "Bình tĩnh và uy tín"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Khi sân khởi, trí tuệ bị che, tình thương bị mất – con người rơi vào vô minh, dễ tạo nghiệp xấu."
+  },
+  {
+    "id": "q_11",
+    "type": "multiple-choice",
+    "questionText": "“Im lặng như Thánh” nghĩa là gì?",
+    "options": [
+      "Im lặng vì không muốn tạo thêm nghiệp ác",
+      "Im lặng để giữ tâm bình thản, không bị kích động",
+      "Im lặng để tỏ ra cao siêu"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "“Im lặng như Thánh” là giữ tâm an trước nghịch cảnh, không để lời nói tạo nghiệp – đó là trí tuệ tỉnh thức."
+  },
+  {
+    "id": "q_12",
+    "type": "multiple-choice",
+    "questionText": "Nếu ai cũng biết ăn năn và sửa lỗi, xã hội sẽ như thế nào?",
+    "options": [
+      "Con người sống an hòa, không còn hận thù",
+      "Mỗi người đều được người khác tôn trọng",
+      "Mọi việc xấu dần tan biến"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Hối lỗi và tha thứ là hai cánh của tình thương; có chúng, thế gian trở thành chốn an vui."
+  },
+  {
+    "id": "q_13",
+    "type": "multiple-choice",
+    "questionText": "Cái chết của con chim ưng mang thông điệp đạo đức gì?",
+    "options": [
+      "Sự trung thành đến tận cùng",
+      "Lòng hiếu sinh dũng cảm – cứu người dù biết sẽ chết",
+      "Tình thương giữa loài vật và con người"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Chim ưng là biểu tượng của tình thương vô ngã – dám chết để cứu chủ mình."
+  },
+  {
+    "id": "q_14",
+    "type": "multiple-choice",
+    "questionText": "Đạo đức nào là nền tảng cho mọi hành động thiện lành trong câu chuyện?",
+    "options": [
+      "Đức hiếu sinh",
+      "Đức từ bi",
+      "Đức nhẫn nhục"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "Từ bi, nhẫn nhục đều sinh từ gốc hiếu sinh – tình thương đối với sự sống của muôn loài."
+  },
+  {
+    "id": "q_15",
+    "type": "multiple-choice",
+    "questionText": "Nếu đặt mình vào vị trí Thành Cát Tư Hãn, điều cần rèn luyện nhất là gì?",
+    "options": [
+      "Biết dừng lại và soi xét trước khi hành động",
+      "Giữ bình tĩnh, không để cảm xúc lấn át",
+      "Rèn tâm hiếu sinh để lòng luôn sáng suốt"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Bình tĩnh và soi xét là bước đầu, nhưng gốc sâu vẫn là tâm hiếu sinh, vì khi có hiếu sinh thì trí tuệ tự sáng."
+  }
+]
