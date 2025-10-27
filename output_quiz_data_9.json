@@ -5,11 +5,11 @@
     "questionText": "Thành Cát Tư Hãn mang theo con chim ưng bên mình để làm gì?",
     "options": [
       "Để giúp săn bắn và bảo vệ chủ khi đi rừng",
-      "Vì xem chim ưng là bạn trung thành, gắn bó trên mọi chiến trường",
+      "Vì chim ưng là bạn trung thành, gắn bó trên mọi chiến trường",
       "Vì người Mông Cổ coi chim ưng là linh vật may mắn"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Ông mang chim ưng không chỉ để săn bắn mà vì tình bạn, sự gắn bó – thể hiện mối quan hệ nhân ái giữa người và loài vật."
+    "explanation": "Ông mang chim ưng không chỉ để săn bắn mà vì còn giúp ông trong những lúc khó khăn như tìm thấy đường đi…"
   },
   {
     "id": "q_2",
@@ -21,7 +21,7 @@
       "Vì nó muốn cứu chủ khỏi uống phải nước có độc"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Chim ưng hành động với ý thức hiếu sinh, chấp nhận chết để cứu người, biểu hiện tình thương vượt bản năng."
+    "explanation": "Chim ưng hành động với <b>ý thức hiếu sinh</b>, muốn giúp cho chủ của mình không uống phải nước có độc, nên đã liều mình dù biết là sẽ bị chết."
   },
   {
     "id": "q_3",
@@ -33,7 +33,7 @@
       "Bản năng bảo vệ chủ của loài vật"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Đây không chỉ là trung thành, mà là đạo đức hiếu sinh thân hành, đặt sự sống của người khác lên trên bản thân."
+    "explanation": "Đây không chỉ là trung thành, mà là <b>đạo đức hiếu sinh thân hành</b>, đặt sự sống của người khác lên trên bản thân."
   },
   {
     "id": "q_4",
@@ -45,7 +45,7 @@
       "Vì sân hận che mất trí sáng suốt"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Cơn sân khiến tâm trí mờ tối, không còn trí tuệ để phân biệt đúng sai — đây là gốc của mọi sai lầm."
+    "explanation": "Cơn sân khiến tâm trí mờ tối, không còn trí tuệ để phân biệt đúng sai — <b>đây là gốc của mọi sai lầm.</b>"
   },
   {
     "id": "q_5",
@@ -57,7 +57,7 @@
       "Giận dữ khiến ta quên mất lòng nhân"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Cả ba đều đúng, nhưng sâu nhất là thiếu đức hiếu sinh, vì khi tâm không còn thương yêu, con người dễ sa vào tội ác."
+    "explanation": "Cả ba đều đúng, nhưng sâu nhất là <b>thiếu đức hiếu sinh</b>, vì khi tâm không còn thương yêu, con người dễ sa vào tội ác."
   },
   {
     "id": "q_6",
@@ -69,7 +69,7 @@
       "Lời nói không đúng lúc, tạo nghiệp khẩu"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Mọi lời nói thiếu ái ngữ đều xuất phát từ tâm sân. Ái ngữ là biểu hiện của lòng từ bi và hiểu biết."
+    "explanation": "Mọi lời nói thiếu ái ngữ đều xuất phát từ <b>tâm sân</b>. Ái ngữ là biểu hiện của lòng từ bi và hiểu biết."
   },
   {
     "id": "q_7",
@@ -81,7 +81,7 @@
       "Giận dữ luôn đem lại hậu quả đau lòng"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Ông nhận ra lòng trung và tình thương của con chim, từ đó sinh tâm hối hận và tỉnh ngộ sâu sắc."
+    "explanation": "Ông nhận ra lòng trung thành và tình thương của con chim, từ đó <b>sinh tâm hối hận và tỉnh ngộ sâu sắc</b>."
   },
   {
     "id": "q_8",
@@ -93,7 +93,7 @@
       "Hiếu sinh ý hành – biết ăn năn và chuyển tâm thiện"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Khi hối hận và phát tâm sửa sai, đó là ý hành hiếu sinh, biểu hiện của sự tỉnh thức trong nội tâm."
+    "explanation": "Khi hối hận và phát tâm sửa sai, đó là <b>ý hành hiếu sinh</b>, biểu hiện của sự tỉnh thức trong nội tâm."
   },
   {
     "id": "q_9",
@@ -129,7 +129,7 @@
       "Im lặng để tỏ ra cao siêu"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "“Im lặng như Thánh” là giữ tâm an trước nghịch cảnh, không để lời nói tạo nghiệp – đó là trí tuệ tỉnh thức."
+    "explanation": "“Im lặng như Thánh” là <b>giữ tâm an trước nghịch cảnh</b>, không để lời nói tạo nghiệp – đó là trí tuệ tỉnh thức."
   },
   {
     "id": "q_12",
@@ -141,7 +141,7 @@
       "Mọi việc xấu dần tan biến"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Hối lỗi và tha thứ là hai cánh của tình thương; có chúng, thế gian trở thành chốn an vui."
+    "explanation": "Hối lỗi và tha thứ là <b>hai cánh của tình thương</b>; có chúng, thế gian trở thành chốn an vui."
   },
   {
     "id": "q_13",
@@ -153,7 +153,7 @@
       "Tình thương giữa loài vật và con người"
     ],
     "correctAnswerIndex": 1,
-    "explanation": "Chim ưng là biểu tượng của tình thương vô ngã – dám chết để cứu chủ mình."
+    "explanation": "Chim ưng là biểu tượng của <b>tình thương vô ngã</b> – dám chết để cứu chủ mình."
   },
   {
     "id": "q_14",
@@ -165,7 +165,7 @@
       "Đức nhẫn nhục"
     ],
     "correctAnswerIndex": 0,
-    "explanation": "Từ bi, nhẫn nhục đều sinh từ gốc hiếu sinh – tình thương đối với sự sống của muôn loài."
+    "explanation": "Từ bi, nhẫn nhục đều sinh từ <b>gốc hiếu sinh</b> – tình thương đối với sự sống của muôn loài."
   },
   {
     "id": "q_15",
@@ -177,6 +177,6 @@
       "Rèn tâm hiếu sinh để lòng luôn sáng suốt"
     ],
     "correctAnswerIndex": 2,
-    "explanation": "Bình tĩnh và soi xét là bước đầu, nhưng gốc sâu vẫn là tâm hiếu sinh, vì khi có hiếu sinh thì trí tuệ tự sáng."
+    "explanation": "Bình tĩnh và soi xét là bước đầu, nhưng gốc sâu vẫn là <b>tâm hiếu sinh</b>, vì khi có hiếu sinh thì trí tuệ tự sáng."
   }
 ]

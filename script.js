@@ -274,7 +274,7 @@ function checkAnswer(isTimeout = false) {
 
     submitButton.classList.add('hidden');
     explanationArea.classList.remove('hidden');
-    explanationText.textContent = currentQuestion.explanation;
+    explanationText.innerHTML = currentQuestion.explanation;
     
     // ➤ Hiển thị ảnh giải thích nếu có
     displayExplanationImage();
