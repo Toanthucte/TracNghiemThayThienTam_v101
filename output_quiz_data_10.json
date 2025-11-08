@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q_1",
+    "type": "multiple-choice",
+    "questionText": "Nguyên nhân khiến cậu bé phải đóng đinh lên hàng rào là gì?",
+    "options": [
+      "Vì muốn ghi nhớ lỗi lầm để tự sửa mình",
+      "Vì cha bảo để nhớ lời dạy",
+      "Vì mỗi lần nổi nóng hay nặng lời với ai"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Cậu bé được cha dạy rằng mỗi khi nóng giận thì hãy đóng một cây đinh để thấy tác hại của sân hận và tập kềm chế bản thân."
+  },
+  {
+    "id": "q_2",
+    "type": "multiple-choice",
+    "questionText": "Người cha trong câu chuyện đã dạy con bằng cách nào?",
+    "options": [
+      "Giảng giải bằng lý thuyết và lời nói nhẹ nhàng",
+      "Bằng hành động cụ thể – cho túi đinh và hướng dẫn thực hành",
+      "Phạt con mỗi khi con nổi giận để con sợ mà bỏ"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Người cha dạy bằng hành động cụ thể, thể hiện đức hiếu sinh thân hành và khẩu hành, giúp con tự trải nghiệm để nhận ra giá trị của lòng yêu thương."
+  },
+  {
+    "id": "q_3",
+    "type": "multiple-choice",
+    "questionText": "Điều gì cho thấy cậu bé đã tiến bộ trong việc rèn tâm?",
+    "options": [
+      "Số đinh đóng mỗi ngày ít dần đi",
+      "Cha thường khen ngợi con",
+      "Cậu không còn phải đóng đinh nữa"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Không còn phải đóng đinh là dấu hiệu tâm sân đã được khắc phục – kết quả của ý hành làm chủ tâm."
+  },
+  {
+    "id": "q_4",
+    "type": "multiple-choice",
+    "questionText": "Việc nhổ từng cây đinh tượng trưng cho điều gì?",
+    "options": [
+      "Sửa chữa lỗi lầm đã gây ra",
+      "Diệt trừ dần dần tâm sân hận trong lòng",
+      "Làm mới lại tâm hồn"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mỗi cây đinh được nhổ là một tâm sân được diệt trừ, biểu hiện tiến trình tu tập và chuyển hóa nội tâm."
+  },
+  {
+    "id": "q_5",
+    "type": "multiple-choice",
+    "questionText": "Người cha nói: “Con hãy nhìn vào những lỗ đinh trên hàng rào…” – lời này nhắc nhở điều gì?",
+    "options": [
+      "Mọi lỗi lầm đều có thể quên đi",
+      "Lời nói trong cơn giận để lại vết thương khó lành",
+      "Cần xin lỗi nhiều lần để bù đắp"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Vết đinh ví như vết thương tâm hồn – có thể xin lỗi, nhưng dấu hằn vẫn còn, chỉ có tình thương chân thật mới hàn gắn được."
+  },
+  {
+    "id": "q_6",
+    "type": "multiple-choice",
+    "questionText": "Bài học “Những cây đinh” chủ yếu dạy rèn luyện đức hạnh nào?",
+    "options": [
+      "Đạo đức nhẫn nhục chịu đựng",
+      "Đạo đức trung thực trong cư xử",
+      "Đạo đức hiếu sinh – ý hành làm chủ tư duy"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Cốt lõi của bài là rèn ý hành hiếu sinh, tức là học cách tư duy, suy nghĩ thiện lành để không gây khổ mình, khổ người."
+  },
+  {
+    "id": "q_7",
+    "type": "multiple-choice",
+    "questionText": "Theo bài học, muốn nuôi lớn lòng yêu thương thì điều đầu tiên phải làm là gì?",
+    "options": [
+      "Làm nhiều việc thiện giúp người khác",
+      "Tư duy, suy nghĩ những điều lành và tránh niệm ác",
+      "Đọc nhiều kinh điển để hiểu đạo"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mọi việc thiện bắt đầu từ ý hành, tức là tâm niệm và tư duy chân chánh."
+  },
+  {
+    "id": "q_8",
+    "type": "multiple-choice",
+    "questionText": "Phật dạy: “Không nên giết hại chúng sinh” – lời dạy này thuộc hành động nào?",
+    "options": [
+      "Thân hành – vì liên quan đến hành động giết hại",
+      "Khẩu hành – vì là lời dạy, lời khuyên từ bi",
+      "Ý hành – vì do tâm nghĩ thiện"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Lời dạy của Phật là khẩu hành hiếu sinh – khuyên người giữ tâm từ và tránh làm hại chúng sinh."
+  },
+  {
+    "id": "q_9",
+    "type": "multiple-choice",
+    "questionText": "Vì sao nói “Lòng yêu thương là pháp môn đệ nhất”?",
+    "options": [
+      "Vì dễ thực hành, ai cũng làm được",
+      "Vì giúp con người hòa hợp với nhau",
+      "Vì chỉ có lòng yêu thương mới đem lại bình an cho muôn loài"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Lòng yêu thương chân thật giúp diệt sân hận và tạo an lạc cho bản thân và thế giới."
+  },
+  {
+    "id": "q_10",
+    "type": "multiple-choice",
+    "questionText": "Khi lòng yêu thương ngự trị trong tâm, con người đạt được điều gì?",
+    "options": [
+      "Hạnh phúc tạm thời và niềm vui trong hiện tại",
+      "Tâm an ổn, không còn sợ hãi trước khổ đau",
+      "Làm chủ sinh, già, bệnh, chết – thoát khỏi luân hồi"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Lòng yêu thương rộng lớn giúp tâm thanh tịnh, là nền tảng để đạt giải thoát – vượt khỏi khổ sinh tử."
+  },
+  {
+    "id": "q_11",
+    "type": "multiple-choice",
+    "questionText": "Nếu chưa có đức hiếu sinh mà tu Thiền hay cầu Tam Minh thì kết quả ra sao?",
+    "options": [
+      "Dễ rơi vào ngã mạn, không thành công",
+      "Vẫn có thể đạt đạo nếu tinh tấn",
+      "Vô ích, vì thiếu nền tảng từ bi"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Thiếu đức hiếu sinh thì mọi công phu thiền định chỉ là hình thức – từ bi là gốc của trí tuệ."
+  },
+  {
+    "id": "q_12",
+    "type": "multiple-choice",
+    "questionText": "“Tu tập tỉnh giác là triển khai tri kiến hiểu biết” nghĩa là sao?",
+    "options": [
+      "Phải học thuộc kinh điển để biết rõ thiện ác",
+      "Quan sát tâm mình, biết niệm nào thiện – ác để diệt ác, tăng thiện",
+      "Giữ im lặng để tâm được yên"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Tỉnh giác giúp phân loại và chuyển hóa tâm niệm, là bước thực hành tri kiến giải thoát thật sự."
+  },
+  {
+    "id": "q_13",
+    "type": "multiple-choice",
+    "questionText": "Hành động “đóng – nhổ đinh” phản ánh quy luật nhân quả nào?",
+    "options": [
+      "Làm sai thì bị phạt, làm đúng thì được thưởng",
+      "Gieo sân gặt khổ, gieo từ bi gặt an vui",
+      "Mọi việc đều do số phận"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mỗi hành động đều tạo quả tương xứng – khi dừng sân hận, an vui tự đến; đó là nhân quả hiếu sinh."
+  },
+  {
+    "id": "q_14",
+    "type": "multiple-choice",
+    "questionText": "Vì sao con người khó bỏ được tính nóng nảy?",
+    "options": [
+      "Vì sống trong môi trường nhiều áp lực",
+      "Vì dễ bị người khác làm tổn thương",
+      "Vì không biết tu tập bằng ý hành để kiểm soát tâm mình"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Biết lỗi mà không tu tập bằng ý hành chánh tư duy thì sân vẫn tồn tại, dù hoàn cảnh có đổi thay."
+  },
+  {
+    "id": "q_15",
+    "type": "multiple-choice",
+    "questionText": "Theo tinh thần bài học, khi nào thế giới này trở thành “Thiên Đàng, Cực Lạc”?",
+    "options": [
+      "Khi mọi người sống hòa thuận, không chiến tranh",
+      "Khi xã hội không còn đói nghèo",
+      "Khi con người sống đúng năm đức hạnh hiếu sinh Phật dạy"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Khi tâm người tràn đầy yêu thương và không giết hại, thì ngay thế gian này cũng trở thành Cực Lạc."
+  }
+]
